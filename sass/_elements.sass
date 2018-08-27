@@ -1,0 +1,206 @@
+@import "bourbon/bourbon"
+@import "sass/_blocks"
+
+/*Компоненты*/
+
+.h-region
+	font-size: 12px
+	line-height: 34px
+	color: #fff
+	position: relative
+	padding-left: 15px
+	&::before
+		content: ''
+		width: 10px
+		height: 9px
+		background-image: url(../img/icons/region.svg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -4.5px
+	&__link
+		text-decoration: none
+		color: #fff
+		line-height: 100%
+		border-bottom: 1px solid rgba(255,255,255,.3);
+		&:hover
+			color: #fff
+			text-decoration: none
+			opacity: .8
+
+.h-menu
+	font-size: 0
+	display: inline-block
+	&__link
+		line-height: 100%
+		border-bottom: 1px solid rgba(255,255,255,.3);
+		color: #fff
+		&:hover
+			text-decoration: none
+			color: #fff
+			opacity: .8
+	&__item
+		display: inline-block
+		margin-left: 40px
+		line-height: 34px
+		font-size: 12px
+		color: #fff
+		&:first-child
+			margin-left: 0
+		&-first
+			color: #fff264
+			padding-left: 15px
+			position: relative
+			.h-menu__link
+				color: #fff264
+				border-bottom: 1px solid rgba(255,242,100,.3)
+				&:hover
+					text-decoration: none
+					color: #fff264
+				&::before
+					content: ''
+					width: 11px
+					height: 12px
+					position: absolute
+					left: 0
+					top: 50%
+					margin-top: -6px
+					display: block
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center center
+					background-image: url(../img/icons/skidka.svg)
+
+.h-logo
+	display: inline-block
+	&__img
+		max-width: 133px
+		width: 100%
+		height: auto
+		display: block
+
+.h-catalog
+	color: #fff
+	position: relative
+	font-size: 14px
+	line-height: 49px
+	height: 49px
+	display: block
+	text-align: center
+	background-color: #6b25fc
+	border-radius: 4px
+	max-width: 187px
+	width: 100%
+	&:hover
+		background-color: #6b25fc
+		color: #fff
+		text-decoration: none
+	&__text
+		display: inline-block
+		padding-left: 28px
+		position: relative
+	&__icon
+		position: absolute
+		width: 18px
+		height: 12px
+		left: 0
+		display: block
+		top: 50%
+		margin-top: -6px
+	&__line
+		display: block
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition-property: all
+		transition-duration: 0.3s
+		transition-timing-function: ease
+		transition-delay: 0s
+		border-radius: 10px
+		margin-top: 3px
+		&:first-child
+			margin-top: 0
+
+.h-search
+	display: block
+	&::before
+		content: ''
+		display: table
+	&::after
+		content: ''
+		display: table
+		clear: both
+	&__input
+		font-size: 14px
+		color: #222
+		height: 49px
+		border-radius: 4px 0 0 4px
+		padding-right: 10px
+		border: 2px solid transparent
+		border-right: none
+		padding-left: 15px
+		padding-right: 45px
+		float: left
+		max-width: 398px
+		width: 100%
+		&:focus
+			border: 2px solid #6b25fc
+			border-right: none
+	&__button
+		color: #fff
+		background-color: #6b25fc
+		height: 49px
+		border: none
+		line-height: 49px
+		border-radius: 0 4px 4px 0
+		text-align: center
+		max-width: 78px
+		width: 100%
+		display: block
+		font-size: 14px
+		float: left
+
+.h-come,
+.h-basket
+	font-size: 16px
+	line-height: 42px
+	color: #fff
+	text-align: left
+	display: block
+	position: relative
+	&:hover
+		text-decoration: none
+		color: #fff
+		opacity: .8
+
+.h-come
+	padding-left: 24px
+	&::before
+		content: ''
+		width: 17px
+		height: 20px
+		background-image: url(../img/icons/profill.svg)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -10px
+.h-basket
+	padding-left: 28px
+	&::before
+		content: ''
+		width: 23px
+		height: 19px
+		background-image: url(../img/icons/basket.svg)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -9.5px
