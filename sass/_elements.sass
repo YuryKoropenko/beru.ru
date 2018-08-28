@@ -85,15 +85,15 @@
 .h-catalog
 	color: #fff
 	position: relative
-	font-size: 14px
+	font-size: 16px
+	font-family: "YSTMedium"
 	line-height: 49px
 	height: 49px
 	display: block
 	text-align: center
 	background-color: #6b25fc
 	border-radius: 4px
-	max-width: 187px
-	width: 100%
+	width: 187px
 	&:hover
 		background-color: #6b25fc
 		color: #fff
@@ -160,7 +160,7 @@
 		max-width: 78px
 		width: 100%
 		display: block
-		font-size: 14px
+		font-size: 16px
 		float: left
 
 .h-come,
@@ -204,3 +204,583 @@
 		left: 0
 		top: 50%
 		margin-top: -9.5px
+
+.p-indexslider
+	&__item
+	&__link
+		display: block
+		width: 100%
+		height: 300px
+		background-size: auto 100%
+		background-repeat: no-repeat
+		background-position: center center
+	.owl-prev
+		width: 52px
+		height: 52px
+		display: block
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		left: 32px
+		top: 50%
+		margin-top: -26px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		opacity: .5
+		&:hover
+			opacity: 1
+		span
+			font-size: 0
+			width: 16px
+			height: 16px
+			display: block
+			background-repeat: no-repeat
+			background-position: center center
+			background-image: url(../img/icons/back.svg)
+			background-size: cover
+	.owl-next
+		width: 52px
+		height: 52px
+		display: block
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		right: 32px
+		top: 50%
+		margin-top: -26px
+		display: block
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		opacity: .5
+		&:hover
+			opacity: 1
+		span
+			font-size: 0
+			width: 16px
+			height: 16px
+			display: block
+			background-repeat: no-repeat
+			background-position: center center
+			background-image: url(../img/icons/back.svg)
+			background-size: cover
+			transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+	.owl-dots
+		font-size: 0
+		text-align: center
+		position: absolute
+		bottom: 16px
+		left: 0
+		right: 0
+	.owl-dot
+		display: inline-block
+		width: 8px
+		background-color: #d8d8d8 !important
+		height: 8px
+		border-radius: 50%
+		margin: 0 6px
+	.owl-dot.active
+		background-color: #422498 !important
+
+.p-catalogslider
+	&__item
+	&__link
+		display: block
+		padding: 24px 18px
+		&:hover
+			text-decoration: none
+			background-color: #f7f7f7
+	&__top
+		height: 152px
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__img
+		display: block
+	&__title
+		display: block
+		text-align: center
+		font-family: "YSTMedium"
+		font-style: normal
+		font-stretch: normal
+		font-size: 16px
+		line-height: 24px
+		margin-top: 12px
+		white-space: normal
+		color: #222
+	.owl-prev
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		left: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.owl-next
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		right: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.disabled
+		display: none !important
+
+.p-bigdiscounts
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 68px
+	background-color: #f7f7f7
+	&:hover
+		text-decoration: none
+	&__left
+		text-align: center
+		width: 292px
+		padding-left: 292 - 220 + px
+	&__center
+		text-align: center
+		width: 247px
+	&__right
+		text-align: left
+		width: 292px
+	&__title
+		font-size: 28px
+		font-family: "YSTMedium"
+		color: #222
+		display: block
+		line-height: 36px
+		max-height: 105px
+		overflow: hidden
+	&__boom
+		transform: rotate(-9deg)
+		-webkit-transform: rotate(-9deg)
+		font-family: BalloonSCD-Extr
+		font-size: 92px
+		letter-spacing: -4.5px
+		color: #f73d34
+		position: relative
+		display: block
+		margin-top: -33px
+	&__discount
+		color: #f73d34
+		font-size: 20px
+		display: block
+		font-family: "YSTMedium"
+	&__img
+		display: block
+		width: 200px
+		height: auto
+		margin: 0 auto
+	&__price
+		display: block
+		span
+			display: inline-block
+			color: #f73d34
+			font-family: "YSTMedium"
+			font-size: 32px
+			letter-spacing: -.2px
+			&::after
+				content: '₽'
+				font-size: 26px
+				margin-left: 7px
+				font-family: "YSTBold"
+	&__oldprice
+		display: block
+		span
+			display: inline-block
+			font-size: 20px
+			line-height: 24px
+			color: #222
+			letter-spacing: -.2px
+			font-family: "YSTMedium"
+			position: relative
+			&::after
+				content: '₽'
+				margin-left: 6px
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				bottom: 0
+				right: 0
+				display: block
+				width: 100%
+				height: 100%
+				background-image: url(../img/icons/old.svg)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: contain
+
+.p-sliderdiscounts
+	&__item
+	&__link
+		display: block
+		position: relative
+		padding-top: 16px
+		&:hover
+			text-decoration: none
+			background-color: #f7f7f7
+	&__discounts
+		background-image: url(../img/icons/discounts.svg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+		display: block
+		position: absolute
+		width: 46px
+		height: 25px
+		line-height: 25px
+		text-align: center
+		top: 16px
+		left: 8px
+		font-size: 14px
+		color: #fff
+	&__top
+		height: 184px
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+	&__wrapper
+		max-height: 100%
+		max-width: 100%
+	&__img
+		display: block
+		max-height: 100%
+		max-width: 100%
+		width: auto !important
+		height: auto
+	&__content
+		padding-top: 16px
+		padding-bottom: 42px
+		padding-left: 8px
+		padding-right: 8px
+	&__row
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-start
+	&__price
+		font-size: 0
+		padding-bottom: 8px
+	&__new
+		color: #f73d34
+		font-family: "YSTMedium"
+		letter-spacing: -.2px
+		font-size: 16px
+		display: inline-block
+		&::after
+			content: '₽'
+			font-size: 14px
+	&__old
+		margin-left: 8px
+		color: #222
+		position: relative
+		letter-spacing: -.2px
+		font-size: 12px
+		&::after
+			content: '₽'
+			font-size: 12px
+		&::before
+			content: ''
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background-size: contain
+			position: absolute
+			width: 100%
+			height: 100%
+			display: block
+			background-image: url(../img/icons/old.svg)
+			background-position: center center
+			background-repeat: no-repeat
+	&__title
+		color: #222
+		font-size: 14px
+		line-height: 18px
+		height: 54px
+		overflow: hidden
+	.owl-prev
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		left: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.owl-next
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		right: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+
+.p-todaydiscount
+	text-align: center
+	position: relative
+	&::before
+		content: ''
+		display: block
+		left: 0
+		right: 0
+		top: 0
+		height: 92px
+		background-color: #8ef4a8
+		z-index: -1
+		position: absolute
+	&::after
+		content: ''
+		display: block
+		top: 91px
+		border-top: 59px solid #8ef4a8
+		border-right: 438px solid transparent
+		position: absolute
+		left: 0
+		right: 0
+	&__title
+		padding-top: 26px
+		font-size: 28px
+		font-family: "YSTMedium"
+		color: #222
+	&__wow
+		width: 100%
+		margin-top: -30px
+		transform: rotate(-9deg)
+		font-size: 92px
+		letter-spacing: -4.5px
+		z-index: 1
+		color: #f73d34
+	&__wrapper
+	&__link
+		display: block
+		padding-bottom: 8px
+		&:hover
+			text-decoration: none
+			.p-todaydiscount__name
+				color: #999
+	&__top
+		position: relative
+		height: 300px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+	&__img
+		height: 100%
+		width: auto
+	&__discounts
+		position: absolute
+		bottom: 0
+		width: 64px
+		height: 35px
+		background-image: url(../img/icons/discounts.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+		font-size: 16px
+		color: #fff
+		line-height: 35px
+		text-align: center
+		display: block
+		left: 50%
+		margin-left: -32px
+	&__bottom
+		padding-top: 24px
+	&__row
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+	.br-widget
+		display: block
+		float: left
+	&__assessment
+		line-height: 24px
+		display: block
+		font-size: 16px
+		color: #999
+		float: left
+		margin-left: 6px
+	&__name
+		display: block
+		width: 100%
+		padding-top: 15px
+		height: 80px
+		font-size: 20px
+		line-height: 80 / 3 + px
+		letter-spacing: 1.33
+		overflow: hidden
+		color: #222
+	&__price
+		text-align: center
+	&__new
+		color: #f73d34
+		font-family: "YSTBold"
+		letter-spacing: -.2px
+		font-size: 32px
+		display: block
+		&::after
+			content: '₽'
+			font-size: 26px
+	&__old
+		display: inline-block
+		font-size: 20px
+		line-height: 24px
+		color: #222
+		letter-spacing: -.2px
+		position: relative
+		font-family: "YSTMedium"
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			background-image: url(../img/icons/old.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+			z-index: 1
+		&::after
+			content: '₽'
+
+
+.p-prodsdiscounts
+	&::before
+		content: ''
+		display: table
+	&::after
+		content: ''
+		display: table
+		clear: both
+	&__item
+		width: 33.3%
+		float: left
+		.p-sliderdiscounts__discounts
+			left: 16px
+		.p-todaydiscount__assessment
+			line-height: 12px
+			font-size: 13px
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 12px
+		height: 12px

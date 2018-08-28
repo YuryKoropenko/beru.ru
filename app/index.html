@@ -16,6 +16,9 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap-4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fontawesome-free-5.2.0/css/all.min.css">
+	<link rel="stylesheet" href="css/fa-star.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -70,8 +73,8 @@
 			</div>
 		</div>
 		<div class="header__bottom">
-			<div class="container">
-				<div class="row align-items-center">
+			<div class="container" style="height: 100%;">
+				<div class="row align-items-center" style="height: 100%;">
 					<div class="col-lg-2">
 						<div class="header__h-logo">
 							<a href="/" class="h-logo">
@@ -121,9 +124,770 @@
 			</div>
 		</div>
 	</header>
+	<div class="page">
+		<div class="page__index">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-indexslider">
+							<div class="p-indexslider owl-carousel">
+								<div class="p-indexslider__item">
+									<a href="#" class="p-indexslider__link" style="background-image: url('img/slider-1.jpg');"></a>
+								</div>
+								<div class="p-indexslider__item">
+									<a href="#" class="p-indexslider__link" style="background-image: url('img/slider-2.png');"></a>
+								</div>
+								<div class="p-indexslider__item">
+									<a href="#" class="p-indexslider__link" style="background-image: url('img/slider-3.jpg');"></a>
+								</div>
+								<div class="p-indexslider__item">
+									<a href="#" class="p-indexslider__link" style="background-image: url('img/slider-4.jpg');"></a>
+								</div>
+								<div class="p-indexslider__item">
+									<a href="#" class="p-indexslider__link" style="background-image: url('img/slider-5.png');"></a>
+								</div>
+								<div class="p-indexslider__item">
+									<a href="#" class="p-indexslider__link" style="background-image: url('img/slider-6.png');"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-catalogslider">
+							<div class="p-catalogslider owl-carousel">
+								<div class="p-catalogslider__item">
+									<a href="#" class="p-catalogslider__link">
+										<div class="p-catalogslider__top">
+											<img src="img/index-catalog-1.png" alt="alt" class="p-catalogslider__img">
+										</div>
+										<h2 class="p-catalogslider__title">
+											Электроника
+										</h2>
+									</a>
+								</div>
+								<div class="p-catalogslider__item">
+									<a href="#" class="p-catalogslider__link">
+										<div class="p-catalogslider__top">
+											<img src="img/index-catalog-2.png" alt="alt" class="p-catalogslider__img">
+										</div>
+										<h2 class="p-catalogslider__title">
+											Бытовая техника
+										</h2>
+									</a>
+								</div>
+								<div class="p-catalogslider__item">
+									<a href="#" class="p-catalogslider__link">
+										<div class="p-catalogslider__top">
+											<img src="img/index-catalog-3.png" alt="alt" class="p-catalogslider__img">
+										</div>
+										<h2 class="p-catalogslider__title">
+											Красота<br>и здоровье
+										</h2>
+									</a>
+								</div>
+								<div class="p-catalogslider__item">
+									<a href="#" class="p-catalogslider__link">
+										<div class="p-catalogslider__top">
+											<img src="img/index-catalog-4.png" alt="alt" class="p-catalogslider__img">
+										</div>
+										<h2 class="p-catalogslider__title">
+											Компьютерная техника
+										</h2>
+									</a>
+								</div>
+								<div class="p-catalogslider__item">
+									<a href="#" class="p-catalogslider__link">
+										<div class="p-catalogslider__top">
+											<img src="img/index-catalog-5.png" alt="alt" class="p-catalogslider__img">
+										</div>
+										<h2 class="p-catalogslider__title">
+											Дом и дача
+										</h2>
+									</a>
+								</div>
+								<div class="p-catalogslider__item">
+									<a href="#" class="p-catalogslider__link">
+										<div class="p-catalogslider__top">
+											<img src="img/index-catalog-6.png" alt="alt" class="p-catalogslider__img">
+										</div>
+										<h2 class="p-catalogslider__title">
+											Детские товары
+										</h2>
+									</a>
+								</div>
+								<div class="p-catalogslider__item">
+									<a href="#" class="p-catalogslider__link">
+										<div class="p-catalogslider__top">
+											<img src="img/index-catalog-7.png" alt="alt" class="p-catalogslider__img">
+										</div>
+										<h2 class="p-catalogslider__title">
+											Товары для животных
+										</h2>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-bestdiscounts">
+							<div class="page__p-bigdiscounts">
+								<a class="p-bigdiscounts">
+									<div class="p-bigdiscounts__left">
+										<b class="p-bigdiscounts__title">
+											Лучшие скидки этой недели
+										</b>
+										<div class="p-bigdiscounts__boom">
+											Boom
+										</div>
+										<span class="p-bigdiscounts__discount">
+											Скидки от 10%
+										</span>
+									</div>
+									<div class="p-bigdiscounts__center">
+										<img src="img/bigdiscounts.jpg" alt="alt" class="p-bigdiscounts__img">
+									</div>
+									<div class="p-bigdiscounts__right">
+										<b class="p-bigdiscounts__title">
+											Набор Gillette Mach 3 бритва, гель для бритья, кассеты, сменные кассеты: 3 шт
+										</b>
+										<div class="p-bigdiscounts__price">
+											<span>449</span>
+										</div>
+										<div class="p-bigdiscounts__oldprice">
+											<span>840</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="page__p-sliderdiscounts">
+								<div class="p-sliderdiscounts owl-carousel">
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-11%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														7 078
+													</span>
+													<span class="p-sliderdiscounts__old">
+														7 989
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													Перфаратор Makita HR2470
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-22%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov2.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														549
+													</span>
+													<span class="p-sliderdiscounts__old">
+														701
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													Сменные лезвия Gillette Mach 3, 4 шт
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-16%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov3.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														26 999
+													</span>
+													<span class="p-sliderdiscounts__old">
+														31 989
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													Зеркальный фотоаппарат Nikon D3400 Kit черный 18-55mm f/3.5-5.6 VR AF-P
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-12%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov4.png" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														6 999
+													</span>
+													<span class="p-sliderdiscounts__old">
+														7 969
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													Смартфон Alcatel 3V 5099D золотистый
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-24%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov5.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														3 017
+													</span>
+													<span class="p-sliderdiscounts__old">
+														3 990
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													Автокресло группа 1/2/3 (9-36 кг) Zlatek Atlantic камуфляж
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-11%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov6.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														7 598
+													</span>
+													<span class="p-sliderdiscounts__old">
+														8 490
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													Дисковая пила Makita HS7601
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-10%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov7.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														3 607
+													</span>
+													<span class="p-sliderdiscounts__old">
+														3 990
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													УШМ Makita GA5030
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-10%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov7.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														3 607
+													</span>
+													<span class="p-sliderdiscounts__old">
+														3 990
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													УШМ Makita GA5030
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-10%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov7.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														3 607
+													</span>
+													<span class="p-sliderdiscounts__old">
+														3 990
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													УШМ Makita GA5030
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-10%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov7.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														3 607
+													</span>
+													<span class="p-sliderdiscounts__old">
+														3 990
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													УШМ Makita GA5030
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-10%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov7.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														3 607
+													</span>
+													<span class="p-sliderdiscounts__old">
+														3 990
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													УШМ Makita GA5030
+												</h2>
+											</div>
+										</a>
+									</div>
+									<div class="p-sliderdiscounts__item">
+										<a href="#" class="p-sliderdiscounts__link">
+											<span class="p-sliderdiscounts__discounts">
+												-10%
+											</span>
+											<div class="p-sliderdiscounts__top">
+												<img src="img/tov7.jpg" alt="alt" class="p-sliderdiscounts__img">
+											</div>
+											<div class="p-sliderdiscounts__content">
+												<div class="p-sliderdiscounts__price">
+													<span class="p-sliderdiscounts__new">
+														3 607
+													</span>
+													<span class="p-sliderdiscounts__old">
+														3 990
+													</span>
+												</div>
+												<h2 class="p-sliderdiscounts__title">
+													УШМ Makita GA5030
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="page__p-todaydiscount">
+							<div class="p-todaydiscount">
+								<div class="p-todaydiscount__title">
+									Только<br>сегодня
+								</div>
+								<div class="p-todaydiscount__wow">
+									Wow!
+								</div>
+								<div class="p-todaydiscount__wrapper">
+									<a href="#" class="p-todaydiscount__link">
+										<div class="p-todaydiscount__top">
+											<img src="img/tov8.jpg" alt="alt" class="p-todaydiscount__img">
+											<div class="p-todaydiscount__discounts">
+												16%
+											</div>
+										</div>
+										<div class="p-todaydiscount__bottom">
+											<div class="p-todaydiscount__row">
+												<select id="example-fontawesome-o" class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="4.5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													48 оценок
+												</span>
+											</div>
+											<h2 class="p-todaydiscount__name">
+												Зеркальный фотоаппарат Nikon D3400 Kit черный 18-55mm f/3.5-5.6 VR AF-P
+											</h2>
+											<div class="p-todaydiscount__price">
+												<span class="p-todaydiscount__new">
+													26 999
+												</span>
+												<span class="p-todaydiscount__old">
+													31 989
+												</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="page__p-prodsdiscounts">
+							<div class="p-prodsdiscounts">
+								<div class="p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/jquerybarrating/dist/jquery.barrating.min.js"></script>
+	<script>
+
+		/*Слайдер - банер - главный*/
+		$('.p-indexslider').owlCarousel({
+			loop:true,
+			nav:true,
+			items:1
+		});
+
+		/*Слайдер - каталога*/
+		$('.p-catalogslider').owlCarousel({
+			loop:false,
+			margin: 12,
+			dots: false,
+			nav:true,
+			items:6
+		});
+
+		/*Слайдер - скидки*/
+		$('.p-sliderdiscounts').owlCarousel({
+			loop:true,
+			margin: 12,
+			dots: false,
+			slideBy: 6,
+			nav:true,
+			items:6
+		});
+
+		/*Рейтинг звезды*/
+		$(function() {
+			var currentRating = $('.p-todaydiscount__rating').data('current-rating');
+			$('.stars-example-fontawesome-o .current-rating')
+			.find('span')
+			.html(currentRating);
+			$('.stars-example-fontawesome-o .clear-rating').on('click', function(event) {
+				event.preventDefault();
+				$('.p-todaydiscount__rating')
+				.barrating('clear');
+			});
+			$('.p-todaydiscount__rating').barrating({
+				theme: 'fontawesome-stars-o',
+				showSelectedRating: false,
+				initialRating: currentRating,
+				onSelect: function(value, text) {
+					if (!value) {
+						$('.p-todaydiscount__rating')
+						.barrating('clear');
+					} else {
+						$('.stars-example-fontawesome-o .current-rating')
+						.addClass('hidden');
+
+						$('.stars-example-fontawesome-o .your-rating')
+						.removeClass('hidden')
+						.find('span')
+						.html(value);
+					}
+				},
+				onClear: function(value, text) {
+					$('.stars-example-fontawesome-o')
+					.find('.current-rating')
+					.removeClass('hidden')
+					.end()
+					.find('.your-rating')
+					.addClass('hidden');
+				}
+			});
+		});
+
+	</script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>

@@ -8,18 +8,43 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.25
-	font-family: "RobotoRegularNew", sans-serif
+	font-family: "YS Text"
 	overflow-x: hidden
 
 .header
 	background-color: #422598
+	padding-bottom: 20px
+	position: relative
+	&::after
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		display: block
+		box-sizing: padding-box
+		width: 0
+		height: 0
+		content: ''
+		border-width: 40px 50vw
+		border-style: solid
+		border-color: #422598 transparent transparent #422598
 	&__top
 		border-bottom: 1px solid rgba(240,240,240,.1)
+	&__bottom
+		height: 90px
 	&__h-menu
 		width: 100%
 		text-align: right
 	&__h-center
-		
+		margin-left: -20px
+		margin-right: -100px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		width: auto
 	&__h-right
 		display: -webkit-flex
 		display: -moz-flex
@@ -30,6 +55,23 @@ body
 	&__h-catalog
 
 	&__h-search
-		
+		width: 477px
 	&__h-basket
 		margin-left: 26px
+
+.page
+	&__p-indexslider
+		padding-bottom: 20px
+	&__p-catalogslider
+		padding-top: 10px
+	&__p-sliderdiscounts
+		background-color: #f7f7f7
+		margin-top: 3px
+		padding-top: 42px
+		margin-bottom: 25px
+	&__p-todaydiscount
+		padding-right: 48px
+	&__p-prodsdiscounts
+		padding-top: 25px
+	&__p-todaydiscount
+		padding-top: 25px

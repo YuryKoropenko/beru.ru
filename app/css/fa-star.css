@@ -1,0 +1,30 @@
+.br-theme-fontawesome-stars-o .br-widget {
+	height: 24px;
+	white-space: nowrap;
+	font-size: 0;
+}
+.br-theme-fontawesome-stars-o .br-widget a {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-image: url(../img/icons/star-noactive.svg);
+	display: inline-block;
+}
+.br-theme-fontawesome-stars-o .br-widget a.br-active {
+	background-image: url(../img/icons/star-active.svg);
+}
+.br-theme-fontawesome-stars-o .br-widget a.br-selected {
+	background-image: url(../img/icons/star-active.svg);
+}
+.br-theme-fontawesome-stars-o .br-widget a.br-fractional {
+	background-image: url(../img/icons/star-noactive.svg);
+}
+.br-theme-fontawesome-stars-o .br-widget .br-current-rating {
+	display: none;
+}
+.br-theme-fontawesome-stars-o .br-readonly a {
+	cursor: default;
+}
