@@ -58,6 +58,15 @@ body
 		width: 477px
 	&__h-basket
 		margin-left: 26px
+	&__catmenu
+		width: 100%
+		position: absolute
+		left: 0
+		right: 0
+		top: 100%
+		box-shadow: 0 2px 16px 0 rgba(0,0,0,.25)
+		background-color: #fff
+		z-index: 20
 
 .page
 	&__p-indexslider
@@ -75,3 +84,75 @@ body
 		padding-top: 25px
 	&__p-todaydiscount
 		padding-top: 25px
+	&__p-advertising
+		padding-bottom: 26px
+	&__p-title
+		text-align: center
+		width: 100%
+		padding-bottom: 30px
+		position: relative
+		padding-top: 26px
+		&::after
+			content: ''
+			z-index: -1
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 150px
+			height: 40px
+			background-image: url(../img/icons/title.svg)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center center
+			margin-left: -75px
+	&__p-tovslider
+		padding-top: 10px
+		padding-bottom: 25px
+	&__p-partnerslider
+		padding-top: 30px
+		padding-bottom: 100px
+	&__p-randomstock
+		padding-bottom: 68 - 26 + px
+	&__p-newtov
+		padding-bottom: 30px
+	&__skidka
+		margin-top: 110px
+		background-color: #f9f9f9
+		padding: 40px 0
+
+.footer
+	background-color: #422498
+	padding: 18px 0 10px
+	&__top
+		padding: 26px 0
+	&__f-nav
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-start
+		width: 100%
+	&__f-logo
+		display: block
+		width: 100%
+		text-align: right
+	&__bottom
+		.row
+			position: relative
+			&::after
+				content: ''
+				display: block
+				height: 1px
+				left: 15px
+				right: 15px
+				top: 0
+				background-color: rgba(255,255,255,.2)
+				width: auto
+				position: absolute
+	&__f-sogl
+		text-align: left
+		padding: 22px 0
+	&__f-copy
+		text-align: right
+		padding: 22px 0

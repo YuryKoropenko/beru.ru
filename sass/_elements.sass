@@ -298,9 +298,16 @@
 	&__link
 		display: block
 		padding: 24px 18px
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 		&:hover
 			text-decoration: none
 			background-color: #f7f7f7
+			.p-catalogslider__img
+				transform: translateZ(0) scale(.9)
+				-webkit-transform: translateZ(0) scale(.9)
 	&__top
 		height: 152px
 		width: 100%
@@ -313,6 +320,10 @@
 		align-items: center
 	&__img
 		display: block
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 	&__title
 		display: block
 		text-align: center
@@ -483,6 +494,11 @@
 		&:hover
 			text-decoration: none
 			background-color: #f7f7f7
+			.p-sliderdiscounts__title
+				color: #999
+			.p-sliderdiscounts__img
+				transform: translateZ(0) scale(.93)
+				-webkit-transform: translateZ(0) scale(.93)
 	&__discounts
 		background-image: url(../img/icons/discounts.svg)
 		background-repeat: no-repeat
@@ -498,6 +514,15 @@
 		left: 8px
 		font-size: 14px
 		color: #fff
+		z-index: 2
+	&__standart
+		font-size: 16px
+		letter-spacing: -.2px
+		font-family: "YSTMedium"
+		color: #222
+		&::after
+			content: '₽'
+			font-size: 14px
 	&__top
 		height: 184px
 		width: 100%
@@ -517,6 +542,10 @@
 		max-width: 100%
 		width: auto !important
 		height: auto
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 	&__content
 		padding-top: 16px
 		padding-bottom: 42px
@@ -570,6 +599,10 @@
 		line-height: 18px
 		height: 54px
 		overflow: hidden
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 	.owl-prev
 		width: 40px
 		height: 40px
@@ -728,6 +761,10 @@
 		letter-spacing: 1.33
 		overflow: hidden
 		color: #222
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 	&__price
 		text-align: center
 	&__new
@@ -784,3 +821,536 @@
 	.br-theme-fontawesome-stars-o .br-widget a
 		width: 12px
 		height: 12px
+
+.p-advertising
+	display: block
+	width: 100%
+	&__img
+		width: 100%
+		display: block
+		height: auto
+
+.p-title
+	color: #222
+	font-size: 32px
+	line-height: 36px
+	font-family: "YSTMedium"
+	display: inline-block
+
+.p-tovslider
+	&__item
+		width: 100%
+		float: none
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 12px
+		height: 12px
+	.owl-prev
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		left: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.owl-next
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		right: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.disabled
+		display: none !important
+
+.p-partnerslider
+	&__item
+	&__link
+		height: auto
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			.p-partnerslider__img
+				filter: none
+	&__img
+		width: auto !important
+		height: auto
+		filter: grayscale(100%)
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
+	.owl-prev
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		left: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.owl-next
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		right: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.disabled
+		display: none !important
+
+.p-randomstock
+	display: block
+	-webkit-transition: .3s ease-out
+	-moz-transition: .3s ease-out
+	-o-transition: .3s ease-out
+	transition: .3s ease-out
+	&:hover
+		opacity: 0.9
+	&__img
+		display: block
+		width: 100%
+		height: auto
+
+.p-newtov
+	padding-top: 16px
+	padding-bottom: 12px
+	display: block
+	-webkit-transition: .3s ease-out
+	-moz-transition: .3s ease-out
+	-o-transition: .3s ease-out
+	transition: .3s ease-out
+	&:hover
+		background-color: #f7f7f7
+		text-decoration: none
+		.p-newtov__img
+			transform: translateZ(0) scale(0.93);
+			-webkit-transform: translateZ(0) scale(0.93);
+		.p-newtov__title
+			opacity: 1
+			padding-top: 0
+		.p-newtov__new
+			opacity: 1
+	&__top
+		height: 213px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+	&__img
+		max-height: 100%
+		max-width: 100%
+		width: auto
+		display: block
+		height: auto
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
+	&__content
+		padding: 0 16px
+		position: relative
+	&__title
+		overflow: hidden
+		height: 32px
+		margin-top: 0
+		transition: all 300ms ease-out
+		text-align: center
+		text-overflow: ellipsis
+		opacity: 1
+		display: -webkit-box
+		-webkit-box-orient: vertical
+		color: #787878
+		font-size: 12px
+		line-height: 16px
+		padding: 0 12px
+		padding-top: 32px
+		opacity: 0
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
+	&__price
+		display: block
+		padding: 0 16px
+		text-align: center
+		font-size: 0
+	&__new
+		font-size: 16px
+		display: inline-block
+		color: #222
+		font-family: "YSTMedium"
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
+		opacity: .7
+		&::after
+			content: '₽'
+			font-size: 16px
+	&__old
+		display: inline-block
+		margin-left: 8px
+		color: #999
+		font-size: 12px
+		text-decoration: line-through
+		&::after
+			content: '₽'
+			font-size: 12px
+
+.p-more
+	display: block
+	width: 100%
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1)
+	text-align: center
+	color: #000
+	height: 49px
+	line-height: 49px
+	font-size: 14px
+	border-radius: 3px
+	&:hover
+		text-decoration: none
+		color: #000
+
+.p-discount
+	&__text
+		h2
+			font-family: "YSTBold"
+			font-size: 32px
+			line-height: 1.125em
+			color: #222
+			display: block
+			margin-bottom: 16px
+		span
+			margin-bottom: 26px
+			display: block
+			color: #999
+			font-size: 10px
+			letter-spacing: .3px
+	&__application
+		font-size: 0
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		float: left
+		margin-right: 6px
+		&:last-child
+			margin-right: 0
+	&__link
+		display: block
+	&__img
+		width: auto
+		height: auto
+		height: 50px
+	&__baner
+		width: 100%
+		height: 240px
+		position: relative
+		background-color: #6c2aff
+	&__phone
+		display: block
+		right: 8px
+		top: 50%
+		transform: translateY(-50%)
+		position: absolute
+		width: 253px
+		height: auto
+	&__content
+		display: block
+		padding-right: 250px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		width: 100%
+		height: 100%
+		align-items: center
+	&__wrapper
+		display: block
+		width: 100%
+	&__subtitle
+		border: 2px solid #9755ff
+		height: 50px
+		line-height: 46px
+		display: block
+		text-transform: uppercase
+		text-align: center
+		width: 204px
+		margin: 0 auto
+		font-family: "YSTBold"
+		color: #fff
+		font-size: 32px
+	&__subdescription
+		margin-top: 16px
+		font-size: 20px
+		line-height: 1.125em
+		color: #fff
+		font-family: "YSTBold"
+		display: block
+		text-align: center
+		padding-bottom: 16px
+		width: 100%
+
+.f-nav
+	display: block
+	margin-right: 40px
+	&::last-child
+		margin-right: 0
+	&__title
+		display: block
+		font-size: 16px
+		margin-bottom: 20px
+		font-family: "YSTMedium"
+		line-height: 24px
+		color: #fff
+	&__list
+		display: block
+		width: 100%
+	&__item
+		padding: 6px 0
+		display: block
+	&__link
+		display: inline-block
+		color: #fff
+		font-size: 16px
+		line-height: 20px
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
+		&:hover
+			text-decoration: none
+			color: #fff
+			opacity: 0.8
+
+.f-logo
+	display: inline-block
+	width: 133px
+	&__img
+		display: block
+		width: 100%
+		height: auto
+
+.f-sogl
+	display: inline-block
+	padding: 6px 0
+	font-size: 14px
+	color: #fff
+	line-height: 20px
+	-webkit-transition: .3s ease-out
+	-moz-transition: .3s ease-out
+	-o-transition: .3s ease-out
+	transition: .3s ease-out
+	&:hover
+		text-decoration: none
+		color: #fff
+		opacity: 0.8
+
+.f-copy
+	display: inline-block
+	padding: 6px 0
+	line-height: 20px
+	font-size: 14px
+	color: #fff
+
+.h-catmenu
+	width: 250 + 690 + px
+	margin: 0 auto
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	&__left
+		width: 28%
+		height: 100%
+		position: relative
+		&::after
+			content: ''
+			width: 1px
+			top: 0
+			bottom: 0
+			display: block
+			background-color: #ececec
+			position: absolute
+			right: 0
+	&__menu
+		padding: 15px 0 24px
+		margin-right: 15px
+	&__menuitem
+	&__menulink
+		height: 68px
+		padding: 8px
+		padding-left: 48 + 16 + 8 + px
+		font-size: 14px
+		color: #222
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		&:hover
+			font-family: "YSTBold"
+			text-decoration: none
+			color: #222
+			background-color: #fafafa
+	&__menuicon
+		width: 48px
+		display: block
+		position: absolute
+		left: 8px
+		top: 0
+		bottom: 0
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+	&__right
+		width: 100 - 28 + %
+		height: 100%
+	&__hidden
+		padding: 15px 0 0 15px
+	&__cat
+		padding-bottom: 24px
+		width: 48%
+	&__title
+		height: 68px
+		padding: 8px
+		padding-left: 48 + 16 + 8 + px
+		font-size: 14px
+		font-family: "YSTBold"
+		color: #6a3df7
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+	&__icon
+		width: 48px
+		display: block
+		position: absolute
+		left: 8px
+		top: 0
+		bottom: 0
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+	&__list
+		padding-left: 48 + 16 + 8 + px
+	&__item
+		display: block
+		max-width: 200px
+	&__link
+		display: inline-block
+		color: #2b2b2b
+		font-size: 14px
+		line-height: 18px
+		padding: 4px 0
+		&:hover
+			text-decoration: none
+			color: #2b2b2b
+			opacity: .8
