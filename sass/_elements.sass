@@ -29,7 +29,7 @@
 		&:hover
 			color: #fff
 			text-decoration: none
-			opacity: .8
+			opacity: .7
 
 .h-menu
 	font-size: 0
@@ -41,7 +41,7 @@
 		&:hover
 			text-decoration: none
 			color: #fff
-			opacity: .8
+			opacity: .7
 	&__item
 		display: inline-block
 		margin-left: 40px
@@ -94,6 +94,10 @@
 	background-color: #6b25fc
 	border-radius: 4px
 	width: 187px
+	-webkit-transition: .3s ease-out
+	-moz-transition: .3s ease-out
+	-o-transition: .3s ease-out
+	transition: .3s ease-out
 	&:hover
 		background-color: #6b25fc
 		color: #fff
@@ -102,6 +106,10 @@
 		display: inline-block
 		padding-left: 28px
 		position: relative
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 	&__icon
 		position: absolute
 		width: 18px
@@ -110,6 +118,10 @@
 		display: block
 		top: 50%
 		margin-top: -6px
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 	&__line
 		display: block
 		width: 100%
@@ -123,6 +135,29 @@
 		margin-top: 3px
 		&:first-child
 			margin-top: 0
+
+.h-catalog.active
+	background-color: #fff
+	color: #6b25fc
+	.h-catalog__icon
+	.h-catalog__line
+		background-color: #6b25fc
+		width: 18px
+		display: none
+		&:first-child
+			display: block
+			transform: rotate(45deg)
+			-webkit-transform: rotate(45deg)
+			position: absolute
+			top: 5px
+			left: 0
+		&:last-child
+			display: block
+			transform: rotate(-45deg)
+			-webkit-transform: rotate(-45deg)
+			position: absolute
+			top: 2px
+			left: 0
 
 .h-search
 	display: block
@@ -174,7 +209,7 @@
 	&:hover
 		text-decoration: none
 		color: #fff
-		opacity: .8
+		opacity: .7
 
 .h-come
 	padding-left: 24px
@@ -663,6 +698,7 @@
 .p-todaydiscount
 	text-align: center
 	position: relative
+	overflow-x: hidden
 	&::before
 		content: ''
 		display: block
@@ -681,6 +717,7 @@
 		border-right: 438px solid transparent
 		position: absolute
 		left: 0
+		z-index: -1
 		right: 0
 	&__title
 		padding-top: 26px
@@ -914,6 +951,7 @@
 		display: flex
 		justify-content: center
 		align-items: center
+		min-height: 40px
 		&:hover
 			.p-partnerslider__img
 				filter: none
@@ -925,6 +963,7 @@
 		-moz-transition: .3s ease-out
 		-o-transition: .3s ease-out
 		transition: .3s ease-out
+		max-height: 40px
 	.owl-prev
 		width: 40px
 		height: 40px
@@ -1097,9 +1136,14 @@
 	line-height: 49px
 	font-size: 14px
 	border-radius: 3px
+	-webkit-transition: .3s ease-out
+	-moz-transition: .3s ease-out
+	-o-transition: .3s ease-out
+	transition: .3s ease-out
 	&:hover
 		text-decoration: none
 		color: #000
+		background-color: rgba(0,0,0,.1)
 
 .p-discount
 	&__text
@@ -1221,7 +1265,7 @@
 		&:hover
 			text-decoration: none
 			color: #fff
-			opacity: 0.8
+			opacity: 0.7
 
 .f-logo
 	display: inline-block
@@ -1244,7 +1288,7 @@
 	&:hover
 		text-decoration: none
 		color: #fff
-		opacity: 0.8
+		opacity: 0.7
 
 .f-copy
 	display: inline-block
@@ -1262,19 +1306,20 @@
 	display: -o-flex
 	display: flex
 	justify-content: space-between
+	position: relative
+	&::after
+		content: ''
+		width: 1px
+		top: 0
+		bottom: 0
+		display: block
+		background-color: #ececec
+		position: absolute
+		left: 28%
 	&__left
 		width: 28%
 		height: 100%
 		position: relative
-		&::after
-			content: ''
-			width: 1px
-			top: 0
-			bottom: 0
-			display: block
-			background-color: #ececec
-			position: absolute
-			right: 0
 	&__menu
 		padding: 15px 0 24px
 		margin-right: 15px
@@ -1293,6 +1338,12 @@
 		display: flex
 		align-items: center
 		&:hover
+			font-family: "YSTBold"
+			text-decoration: none
+			color: #222
+			background-color: #fafafa
+	&__menuitem.active
+		.h-catmenu__menulink
 			font-family: "YSTBold"
 			text-decoration: none
 			color: #222
@@ -1329,6 +1380,14 @@
 		display: -o-flex
 		display: flex
 		align-items: center
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
+		&:hover
+			text-decoration: none
+			color: #6a3df7
+			opacity: .7
 	&__icon
 		width: 48px
 		display: block
@@ -1350,7 +1409,232 @@
 		font-size: 14px
 		line-height: 18px
 		padding: 4px 0
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 		&:hover
 			text-decoration: none
 			color: #2b2b2b
-			opacity: .8
+			opacity: .7
+
+.p-path
+	font-size: 0
+	&__item
+		display: inline-block
+		padding-right: 24px
+		position: relative
+		&::after
+			content: '—'
+			width: 24px
+			text-align: center
+			line-height: 18px
+			font-size: 14px
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 0
+			color: #999
+		&:last-child
+			padding-right: 0
+			&::after
+				display: none
+	&__link
+		font-size: 14px
+		color: #999
+		line-height: 18px
+		&:hover
+			text-decoration: none
+			color: #999
+			opacity: .7
+
+.p-zag
+	line-height: 36px
+	font-size: 32px
+	color: #222
+	font-family: "YSTMedium"
+
+.p-filter
+	&__top
+		padding-bottom: 14px
+		border-bottom: 1px solid #f0f0f0
+		display: block
+		.p-filter__top
+			border-bottom: none
+			padding-bottom: 0
+			padding-left: 8px
+			.p-filter__top
+	&__topitem
+	&__toplink
+		color: #222
+		font-size: 13px
+		line-height: 15px
+		display: inline-block
+		margin-bottom: 9px
+		&:hover
+			color: #222
+			opacity: .7
+			text-decoration: none
+	&__topitem.active
+		.p-filter__toplink
+			font-family: "YSTMedium"
+	&__price
+		padding-top: 18px
+	&__subtitle
+		font-size: 13px
+		line-height: 15px
+		font-family: "YSTMedium"
+		color: #222
+		margin-bottom: 7px
+		padding: 5px 0
+		display: block
+	&__fromto
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__input
+		width: 100%
+		display: block
+		height: 28px
+		color: #202020
+		border: 2px solid #e8e8e8
+		border-radius: 3px
+		padding-right: 11px
+		padding-left: 5px
+		font-size: 13px
+		&:focus
+			border-color: #ffd426
+	&__fromtoleft
+		width: 50%
+		float: left
+		padding-right: 5px
+	&__fromtoright
+		width: 50%
+		float: right
+		padding-left: 5px
+	&__block
+		padding-top: 30px
+		display: block
+		width: 100%
+		padding-bottom: 5px
+	&__item
+		display: block
+		width: 100%
+		padding: 5px 0
+		input
+			display: none
+		label
+			display: inline-block
+			padding-left: 24px
+			position: relative
+			font-size: 13px
+			color: #222
+			vertical-align: middle
+			cursor: pointer
+			line-height: 16px
+			&::before
+				content: ''
+				border: 2px solid #ececec
+				width: 16px
+				height: 16px
+				border-radius: 3px
+				display: block
+				position: absolute
+				left: 0
+				top: 50%
+				margin-top: -9px
+			&::after
+				content: ''
+				background-image: url(../img/icons/icon-check.svg)
+				width: 12px
+				height: 9px
+				background-size: cover
+				position: absolute
+				left: 2px
+				z-index: 2
+				top: 1px
+			&:hover
+				&::before
+					border-color: #d4d4d4
+					background-color: #f8f8f8
+		input:checked + label::before
+			background-color: #fd8949
+			border-color: #fd8949
+		input:checked + label::after
+			display: block
+	&__listhidden
+		display: none
+	&__letter
+		display: block
+		width: 100%
+		font-size: 13px
+		line-height: 14px
+		color: #999
+		padding-top: 8px
+		padding-bottom: 5px
+	&__scroll
+		max-height: 264px
+		overflow-y: auto
+		overflow-x: hidden
+		margin-top: 7px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			left: 0
+			right: 0
+			width: 100%
+			z-index: 2
+			top: 0
+			height: 8px
+			background-image: linear-gradient(180deg,#f7f7f7 0,hsla(0,0%,100%,.001))
+		&::after
+			content: ''
+			display: block
+			left: 0
+			right: 0
+			width: 100%
+			z-index: 2
+			bottom: 0
+			height: 5px
+			background-image: linear-gradient(0deg,#f7f7f7 0,hsla(0,0%,100%,.001))
+	&__more
+		color: #6a3df7
+		font-size: 14px
+		line-height: 1.6
+		display: inline-block
+		padding: 5px 0
+		&:hover
+			text-decoration: none
+			color: #6a3df7
+			opacity: .7
+	&__color
+		width: 100%
+		max-width: 173px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			clear: both
+			display: table
+	&__coloritem
+		width: 20%
+		padding: 5px 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		float: left
+	&__colorlink
+		display: block
+		width: 24px
+		height: 24px
+		border-radius: 50%

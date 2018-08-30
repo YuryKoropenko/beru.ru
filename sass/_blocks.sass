@@ -13,7 +13,7 @@ body
 
 .header
 	background-color: #422598
-	padding-bottom: 20px
+	padding-bottom: 0
 	position: relative
 	&::after
 		position: absolute
@@ -67,8 +67,24 @@ body
 		box-shadow: 0 2px 16px 0 rgba(0,0,0,.25)
 		background-color: #fff
 		z-index: 20
+		display: none
 
 .page
+	&-white
+		position: relative
+		&::before
+			content: ''
+			width: 100%
+			max-width: 1260px
+			background-color: #fff
+			height: 100px
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+			border-radius: 3px 3px 0 0
 	&__p-indexslider
 		padding-bottom: 20px
 	&__p-catalogslider
@@ -119,6 +135,16 @@ body
 		margin-top: 110px
 		background-color: #f9f9f9
 		padding: 40px 0
+	&__p-zag
+		padding-bottom: 13px
+		border-bottom: 1px solid rgba(32,16,0,.07)
+		width: 100%
+		text-align: left
+	&__p-filter
+		padding: 18px 6px 0
+	&__p-path
+		padding-bottom: 16px
+		padding-top: 26px
 
 .footer
 	background-color: #422498

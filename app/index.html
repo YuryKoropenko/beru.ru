@@ -29,7 +29,7 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3">
 						<div class="header__h-region">
 							<div class="h-region">
 								Регион:
@@ -39,7 +39,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-lg-9 col-md-9">
 						<div class="header__h-menu">
 							<ul class="h-menu">
 								<li class="h-menu__item h-menu__item-first">
@@ -75,14 +75,14 @@
 		<div class="header__bottom">
 			<div class="container" style="height: 100%;">
 				<div class="row align-items-center" style="height: 100%;">
-					<div class="col-lg-2">
+					<div class="col-lg-2 col-md-3">
 						<div class="header__h-logo">
 							<a href="/" class="h-logo">
 								<img src="img/logo.svg" alt="беру!" class="h-logo__img">
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-9">
 						<div class="header__h-center">
 							<div class="header__h-catalog">
 								<a href="#" class="h-catalog">
@@ -106,7 +106,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-md-12">
 						<div class="header__h-right">
 							<div class="header__h-come">
 								<a href="#" class="h-come">
@@ -123,17 +123,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__catmenu" style="display: none;">
+		<div class="header__catmenu">
 			<div class="h-catmenu">
 				<div class="h-catmenu__left">
 					<ul class="h-catmenu__menu">
-						<li class="h-catmenu__menuitem">
+						<li class="h-catmenu__menuitem active" name="cat1">
 							<a href="#" class="h-catmenu__menulink">
 								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/1.png);"></i>
 								Электроника
 							</a>
 						</li>
-						<li class="h-catmenu__menuitem">
+						<li class="h-catmenu__menuitem" name="cat2">
 							<a href="#" class="h-catmenu__menulink">
 								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/2.png);"></i>
 								Компьютерная техника
@@ -178,12 +178,12 @@
 					</ul>
 				</div>
 				<div class="h-catmenu__right">
-					<div class="h-catmenu__hidden">
+					<div class="h-catmenu__hidden cat1">
 						<div class="h-catmenu__cat">
-							<div class="h-catmenu__title">
+							<a href="#" class="h-catmenu__title">
 								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/9.png);"></i>
 								Телефоны
-							</div>
+							</a>
 							<ul class="h-catmenu__list">
 								<li class="h-catmenu__item">
 									<a href="#" class="h-catmenu__link">
@@ -218,10 +218,10 @@
 							</ul>
 						</div>
 						<div class="h-catmenu__cat">
-							<div class="h-catmenu__title">
+							<a href="#" class="h-catmenu__title">
 								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/10.png);"></i>
 								Аудио и видиотехника
-							</div>
+							</a>
 							<ul class="h-catmenu__list">
 								<li class="h-catmenu__item">
 									<a href="#" class="h-catmenu__link">
@@ -251,10 +251,10 @@
 							</ul>
 						</div>
 						<div class="h-catmenu__cat">
-							<div class="h-catmenu__title">
+							<a href="#" class="h-catmenu__title">
 								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/11.png);"></i>
 								Фото и видеокамеры
-							</div>
+							</a>
 							<ul class="h-catmenu__list">
 								<li class="h-catmenu__item">
 									<a href="#" class="h-catmenu__link">
@@ -299,10 +299,10 @@
 							</ul>
 						</div>
 						<div class="h-catmenu__cat">
-							<div class="h-catmenu__title">
+							<a href="#" class="h-catmenu__title">
 								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/12.png);"></i>
 								Портактивная техника
-							</div>
+							</a>
 							<ul class="h-catmenu__list">
 								<li class="h-catmenu__item">
 									<a href="#" class="h-catmenu__link">
@@ -356,6 +356,38 @@
 								</li>
 							</ul>
 						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/13.png);"></i>
+								Игровые приставки
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игровые приставки
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игры для приставок
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/14.png);"></i>
+								GPS-навигация
+							</a>
+						</div>
+					</div>
+					<div class="h-catmenu__hidden cat2">
+						test
 					</div>
 				</div>
 			</div>
@@ -472,7 +504,7 @@
 					<div class="col-md-12">
 						<div class="page__p-bestdiscounts">
 							<div class="page__p-bigdiscounts">
-								<a class="p-bigdiscounts">
+								<a href="#" class="p-bigdiscounts">
 									<div class="p-bigdiscounts__left">
 										<b class="p-bigdiscounts__title">
 											Лучшие скидки этой недели
@@ -1416,7 +1448,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1435,7 +1467,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1457,7 +1489,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1476,7 +1508,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1495,7 +1527,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1514,7 +1546,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1536,7 +1568,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1555,7 +1587,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1574,7 +1606,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1593,7 +1625,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1615,7 +1647,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1634,7 +1666,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1653,7 +1685,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1672,7 +1704,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1694,7 +1726,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1713,7 +1745,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="page__p-newtov">
 							<a href="#" class="p-newtov">
 								<div class="p-newtov__top">
@@ -1747,7 +1779,7 @@
 		<div class="page__skidka">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-lg-6">
+					<div class="col-xl-6 col-lg-5">
 						<div class="page__p-discount">
 							<div class="p-discount">
 								<div class="p-discount__text">
@@ -1773,7 +1805,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-xl-6 col-lg-7">
 						<div class="page__p-discount">
 							<div class="p-discount">
 								<div class="p-discount__baner">
@@ -1800,7 +1832,7 @@
 		<div class="footer__top">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-xl-6 col-lg-8 col-md-9">
 						<div class="footer__f-nav">
 							<div class="f-nav">
 								<b class="f-nav__title">
@@ -1865,7 +1897,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-xl-6 col-lg-4 col-md-3">
 						<div class="footer__f-logo">
 							<a href="/" class="f-logo">
 								<img src="img/logo.svg" alt="alt" class="f-logo__img">
@@ -1878,14 +1910,14 @@
 		<div class="footer__bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-xl-4 col-lg-3">
 						<div class="footer__f-sogl">
 							<a href="#" class="f-sogl">
 								Пользовательское соглашение
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-8">
+					<div class="col-xl-8 col-lg-9">
 						<div class="footer__f-copy">
 							<div class="f-copy">
 								© 2018 ООО «Яндекс.Маркет» — совместное предприятие с участием Яндекса и группы компаний Сбербанк
@@ -1904,11 +1936,6 @@
 	<script type="text/javascript" src="libs/jquerybarrating/dist/jquery.barrating.min.js"></script>
 	<script>
 
-		/*Плитка для меню*/
-		$('.h-catmenu__hidden').masonry({
-			itemSelector: '.h-catmenu__cat'
-		});
-
 		/*Слайдер - банер - главный*/
 		$('.p-indexslider').owlCarousel({
 			loop:true,
@@ -1922,7 +1949,17 @@
 			margin: 12,
 			dots: false,
 			nav:true,
-			items:6
+			responsive:{
+				0:{
+					items:2
+				},
+				768:{
+					items:4
+				},
+				992:{
+					items:6
+				}
+			}
 		});
 
 		/*Слайдер - скидки*/
@@ -1932,7 +1969,18 @@
 			dots: false,
 			slideBy: 6,
 			nav:true,
-			items:6
+			responsive:{
+				0:{
+					items:1,
+					margin: 0
+				},
+				768:{
+					items:4
+				},
+				992:{
+					items:6
+				}
+			}
 		});
 
 		/*Слайдер с товарами*/
@@ -1942,7 +1990,18 @@
 			dots: false,
 			slideBy: 5,
 			nav:true,
-			items:6
+			responsive:{
+				0:{
+					items:1,
+					margin: 0
+				},
+				768:{
+					items:4
+				},
+				992:{
+					items:6
+				}
+			}
 		});
 
 		/*Слайдер со спонсарами*/
@@ -1952,7 +2011,18 @@
 			dots: false,
 			slideBy: 5,
 			nav:true,
-			items:6
+			responsive:{
+				0:{
+					items:1,
+					margin: 0
+				},
+				768:{
+					items:4
+				},
+				992:{
+					items:6
+				}
+			}
 		});
 
 		/*Рейтинг звезды*/

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Заголовок</title>
+<!--
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="libs/bootstrap-4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fontawesome-free-5.2.0/css/all.min.css">
+	<link rel="stylesheet" href="css/fa-star.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- End_Styles -->
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3">
+						<div class="header__h-region">
+							<div class="h-region">
+								Регион:
+								<a href="#" class="h-region__link">
+									Москва
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-9">
+						<div class="header__h-menu">
+							<ul class="h-menu">
+								<li class="h-menu__item h-menu__item-first">
+									Отличные скидки. Надо
+									<a href="#" class="h-menu__link">
+										брать
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Бесплатная
+									<a href="#" class="h-menu__link">
+										доставка
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Удобная
+									<a href="#" class="h-menu__link">
+										оплата
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Лёгкий
+									<a href="#" class="h-menu__link">
+										возврат
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container" style="height: 100%;">
+				<div class="row align-items-center" style="height: 100%;">
+					<div class="col-lg-2 col-md-3">
+						<div class="header__h-logo">
+							<a href="/" class="h-logo">
+								<img src="img/logo.svg" alt="беру!" class="h-logo__img">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-9">
+						<div class="header__h-center">
+							<div class="header__h-catalog">
+								<a href="#" class="h-catalog">
+									<span class="h-catalog__text">
+										<i class="h-catalog__icon">
+											<span class="h-catalog__line"></span>
+											<span class="h-catalog__line"></span>
+											<span class="h-catalog__line"></span>
+										</i>
+										Каталог товаров
+									</span>
+								</a>
+							</div>
+							<div class="header__h-search">
+								<form action="">
+									<div class="h-search">
+										<input type="text" class="h-search__input" placeholder="Я хочу купить...">
+										<input type="submit" class="h-search__button" value="Найти">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="header__h-right">
+							<div class="header__h-come">
+								<a href="#" class="h-come">
+									Войти в аккаунт
+								</a>
+							</div>
+							<div class="header__h-basket">
+								<a href="#" class="h-basket">
+									Корзина
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__catmenu">
+			<div class="h-catmenu">
+				<div class="h-catmenu__left">
+					<ul class="h-catmenu__menu">
+						<li class="h-catmenu__menuitem active" name="cat1">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/1.png);"></i>
+								Электроника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem" name="cat2">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/2.png);"></i>
+								Компьютерная техника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/3.png);"></i>
+								Бытовая техника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/4.png);"></i>
+								Дом и дача
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/5.png);"></i>
+								Детские товары
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/6.png);"></i>
+								Товары для животных
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/7.png);"></i>
+								Красота и здоровье
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/8.jpg);"></i>
+								Сувенирная продукция
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="h-catmenu__right">
+					<div class="h-catmenu__hidden cat1">
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/9.png);"></i>
+								Телефоны
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Мобильные телефоны
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Умные часы и браслеты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары для телефонов
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Чехлы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Внешние аккумуляторы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Наушники и Bluetooth-гарнитуры
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/10.png);"></i>
+								Аудио и видиотехника
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Телевизоры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аудиотехника
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										DVD и Blu-ray плееры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Мониторы
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/11.png);"></i>
+								Фото и видеокамеры
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Фотоаппараты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Объективы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Экшн-камеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Квадрокоптеры с камерой
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Карты памяти
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Штативы и моноподы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Фотопринтеры
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/12.png);"></i>
+								Портактивная техника
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Наушники и Bluetooth-гарнитуры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Портативная акустика
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Планшеты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Квадрокоптеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Цыфровые плееры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Диктофоны
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Магнитолы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Пульсометры и шагометры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Портативные рекордеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Ручные стабилизаторы и стедикамы
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/13.png);"></i>
+								Игровые приставки
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игровые приставки
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игры для приставок
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/14.png);"></i>
+								GPS-навигация
+							</a>
+						</div>
+					</div>
+					<div class="h-catmenu__hidden cat2">
+						test
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page page-white">
+		<div class="page__index">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-path">
+							<ul class="p-path">
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Электроника
+									</a>
+								</li>
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Телефоны и аксессуары к ним
+									</a>
+								</li>
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Мобильные телефоны
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-zag">
+							<h1 class="p-zag">
+								Мобильные телефоны
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-3">
+						<div class="page__p-filter">
+							<div class="p-filter">
+								<div class="p-filter">
+									<ul class="p-filter__top">
+										<li class="p-filter__topitem">
+											<a href="#" class="p-filter__toplink">
+												Электроника
+											</a>
+											<ul class="p-filter__top">
+												<li class="p-filter__topitem">
+													<a href="#" class="p-filter__toplink">
+														Телефоны и аксессуары к ним
+													</a>
+													<ul class="p-filter__top">
+														<li class="p-filter__topitem active">
+															<a href="#" class="p-filter__toplink">
+																Мобильные телефоны (466)
+															</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<div class="p-filter__price">
+										<b class="p-filter__subtitle">
+											Цена, ₽
+										</b>
+										<div class="p-filter__fromto">
+											<div class="p-filter__fromtoleft">
+												<input type="text" class="p-filter__input" placeholder="490">
+											</div>
+											<div class="p-filter__fromtoright">
+												<input type="text" class="p-filter__input" placeholder="81 690">
+											</div>
+										</div>
+									</div>
+									<div class="p-filter__block">
+										<b class="p-filter__subtitle">
+											Производитель
+										</b>
+										<div class="p-filter__listhidden">
+											<input type="text" class="p-filter__input">
+											<div class="p-filter__scroll">
+												<b class="p-filter__letter">
+													A
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem1">
+														<label for="filteritem1">
+															Alcatel
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem2">
+														<label for="filteritem2">
+															Apple
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem3">
+														<label for="filteritem3">
+															Archos
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem4">
+														<label for="filteritem4">
+															Ark
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem5">
+														<label for="filteritem5">
+															ASUS
+														</label>
+													</li>
+												</ul>
+												<b class="p-filter__letter">
+													B
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem6">
+														<label for="filteritem6">
+															BQ
+														</label>
+													</li>
+												</ul>
+												<b class="p-filter__letter">
+													D
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem7">
+														<label for="filteritem7">
+															Digma
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem8">
+														<label for="filteritem8">
+															DOOGEE
+														</label>
+													</li>
+												</ul>
+												<b class="p-filter__letter">
+													M
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem9">
+														<label for="filteritem9">
+															Meizu
+														</label>
+													</li>
+												</ul>
+												<b class="p-filter__letter">
+													N
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem10">
+														<label for="filteritem10">
+															Nokia
+														</label>
+													</li>
+												</ul>
+												<b class="p-filter__letter">
+													S
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem11">
+														<label for="filteritem11">
+															Samsung
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter1" id="filteritem2">
+														<label for="filteritem2">
+															Sony
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="p-filter__listvisible">
+											<ul class="p-filter__list">
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem1">
+													<label for="filteritem1">
+														Alcatel
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem2">
+													<label for="filteritem2">
+														Apple
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem3">
+													<label for="filteritem3">
+														Archos
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem4">
+													<label for="filteritem4">
+														Ark
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem5">
+													<label for="filteritem5">
+														ASUS
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem6">
+													<label for="filteritem6">
+														BQ
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem7">
+													<label for="filteritem7">
+														Digma
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem8">
+													<label for="filteritem8">
+														DOOGEE
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem9">
+													<label for="filteritem9">
+														Meizu
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem10">
+													<label for="filteritem10">
+														Nokia
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem11">
+													<label for="filteritem11">
+														Samsung
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter1" id="filteritem2">
+													<label for="filteritem2">
+														Sony
+													</label>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="p-filter__more p-filter__more-brend">
+											Показать все
+										</a>
+									</div>
+									<div class="p-filter__block">
+										<b class="p-filter__subtitle">
+											Цвет
+										</b>
+										<ul class="p-filter__color">
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #000;"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #808080"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #c0c0c0"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #FFD700"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #0000ff"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #000;"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #808080"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #c0c0c0"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #FFD700"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #0000ff"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #000;"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #808080"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #c0c0c0"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #FFD700"></a>
+											</li>
+											<li class="p-filter__coloritem">
+												<a href="#" class="p-filter__colorlink" style="background-color: #0000ff"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-8 col-md-9">
+						<div class="footer__f-nav">
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Меню
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Обратная связь
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Мои заказы
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Настройки
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Как купить
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Оплата и доставка
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Возврат
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Помощь
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Партнёрам
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Как начать сотрудничество
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Помощь
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-4 col-md-3">
+						<div class="footer__f-logo">
+							<a href="/" class="f-logo">
+								<img src="img/logo.svg" alt="alt" class="f-logo__img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-3">
+						<div class="footer__f-sogl">
+							<a href="#" class="f-sogl">
+								Пользовательское соглашение
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-9">
+						<div class="footer__f-copy">
+							<div class="f-copy">
+								© 2018 ООО «Яндекс.Маркет» — совместное предприятие с участием Яндекса и группы компаний Сбербанк
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="libs/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/jquerybarrating/dist/jquery.barrating.min.js"></script>
+	<script>
+
+		/*Рейтинг звезды*/
+		$(function() {
+			var currentRating = $('.p-todaydiscount__rating').data('current-rating');
+			$('.stars-example-fontawesome-o .current-rating')
+			.find('span')
+			.html(currentRating);
+			$('.stars-example-fontawesome-o .clear-rating').on('click', function(event) {
+				event.preventDefault();
+				$('.p-todaydiscount__rating')
+				.barrating('clear');
+			});
+			$('.p-todaydiscount__rating').barrating({
+				theme: 'fontawesome-stars-o',
+				showSelectedRating: false,
+				initialRating: currentRating,
+				onSelect: function(value, text) {
+					if (!value) {
+						$('.p-todaydiscount__rating')
+						.barrating('clear');
+					} else {
+						$('.stars-example-fontawesome-o .current-rating')
+						.addClass('hidden');
+
+						$('.stars-example-fontawesome-o .your-rating')
+						.removeClass('hidden')
+						.find('span')
+						.html(value);
+					}
+				},
+				onClear: function(value, text) {
+					$('.stars-example-fontawesome-o')
+					.find('.current-rating')
+					.removeClass('hidden')
+					.end()
+					.find('.your-rating')
+					.addClass('hidden');
+				}
+			});
+		});
+
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- End_Scripts -->
+</body>
+</html>
