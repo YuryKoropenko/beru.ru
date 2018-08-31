@@ -471,7 +471,7 @@
 										<b class="p-filter__subtitle">
 											Производитель
 										</b>
-										<div class="p-filter__listhidden">
+										<div class="p-filter__listhidden p-filter__listhidden-brend">
 											<input type="text" class="p-filter__input">
 											<div class="p-filter__scroll">
 												<b class="p-filter__letter">
@@ -578,7 +578,7 @@
 												</ul>
 											</div>
 										</div>
-										<div class="p-filter__listvisible">
+										<div class="p-filter__listvisible p-filter__listvisible-brend">
 											<ul class="p-filter__list">
 												<li class="p-filter__item">
 													<input type="checkbox" name="filter1" id="filteritem1">
@@ -663,50 +663,572 @@
 											Цвет
 										</b>
 										<ul class="p-filter__color">
-											<li class="p-filter__coloritem">
+											<li class="p-filter__coloritem disabled">
+												<span class="p-filter__colortext">
+													черный
+												</span>
 												<a href="#" class="p-filter__colorlink" style="background-color: #000;"></a>
 											</li>
 											<li class="p-filter__coloritem">
+												<span class="p-filter__colortext">
+													серый
+												</span>
 												<a href="#" class="p-filter__colorlink" style="background-color: #808080"></a>
 											</li>
 											<li class="p-filter__coloritem">
+												<span class="p-filter__colortext">
+													серебристый
+												</span>
 												<a href="#" class="p-filter__colorlink" style="background-color: #c0c0c0"></a>
 											</li>
 											<li class="p-filter__coloritem">
+												<span class="p-filter__colortext">
+													золотистый
+												</span>
 												<a href="#" class="p-filter__colorlink" style="background-color: #FFD700"></a>
 											</li>
 											<li class="p-filter__coloritem">
+												<span class="p-filter__colortext">
+													синий
+												</span>
 												<a href="#" class="p-filter__colorlink" style="background-color: #0000ff"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #000;"></a>
+												<span class="p-filter__colortext">
+													белый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #fff; border: 2px solid #e5e5e5;"></a>
+											</li>
+											<li class="p-filter__coloritem disabled">
+												<span class="p-filter__colortext">
+													красный
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #FF0000"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #808080"></a>
+												<span class="p-filter__colortext">
+													коричневый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #964b00"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #c0c0c0"></a>
+												<span class="p-filter__colortext">
+													оранжевый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #ffa500"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #FFD700"></a>
+												<span class="p-filter__colortext">
+													бежевый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #F5F5DC"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #0000ff"></a>
+												<span class="p-filter__colortext">
+													желтый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #FFFF00;"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #000;"></a>
+												<span class="p-filter__colortext">
+													зеленый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #008000"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #808080"></a>
+												<span class="p-filter__colortext">
+													голубой
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #42aaff"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #c0c0c0"></a>
+												<span class="p-filter__colortext">
+													фиолетовый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #8b00ff"></a>
 											</li>
 											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #FFD700"></a>
+												<span class="p-filter__colortext">
+													розовый
+												</span>
+												<a href="#" class="p-filter__colorlink" style="background-color: #fc0fc0"></a>
 											</li>
-											<li class="p-filter__coloritem">
-												<a href="#" class="p-filter__colorlink" style="background-color: #0000ff"></a>
+										</ul>
+									</div>
+									<div class="p-filter__block">
+										<b class="p-filter__subtitle">
+											Тип
+											<a href="#" class="p-filter__infbtn">?</a>
+											<div class="p-filter__popup">
+												<div class="p-filter__trang"></div>
+												<div class="p-filter__popupwp">
+													<h2>Тип</h2>
+													Тип устройства мобильной связи.<br>
+													На данный момент рынок мобильных устройств предлагает широкий выбор 
+													<i>смартфонов</i> и <i>телефонов</i>, включая <i>детские</i> и <i>телефоны для пожилых</i>. 
+													Основное различие приведенных типов заключается в различном функционале.<br> <b>
+														<i>Cмартфоны</i></b> отличаются от телефонов прежде всего собственной установленной операционной системой (см. "
+														<a href="#" class="link">Операционная система</a>", "<a href="#" class="link">Версия ОС</a>"). Такие аппараты выполняют роль карманного персонального компьютера - пользователь может устанавливать различные приложения, наращивая тем самым функционал аппарата в соответствии со своими потребностями. Например, можно установить различные мультимедийные плееры, чтобы иметь возможность проигрывать аудио или видеофайлы различных форматов, которые не поддерживает встроенный проигрыватель.<br> Если телефон рассматривается прежде всего, как средство связи, то больше подойдут обычные <b><i>телефоны</i></b>. Несмотря на свою простоту, такие аппараты могут обладать немалым функционалом. К примеру, в простых телефонах часто можно встретить mp3-плеер, интернет браузер, файловый менеджер и другие функции. Преимуществом такого типа аппаратов является сравнительно низкая стоимость и небольшие габаритные размеры.<br> <b><i>Телефоны для детей</i></b> и <b><i>телефоны для пожилых</i></b> объединены одной идеей - удобство и простота в использовании для своей целевой аудитории. Как правило, такие телефоны не обладают мощными характеристиками или расширенным набором функций. В первую очередь данный тип устройств необходим для совершения звонков или отправки SMS-сообщений. Телефоны для пожилых имеют большие клавиши и цифровые обозначения на них. Детские телефоны выполнены в ярких цветах и необычных формах, часто повторяющие героев любимых мультфильмов. Могут оснащаться GPS-маячком и имеют минимальный набор клавиш, включаю кнопку SOS для быстрого вызова или отправки сообщения на заранее предустановленный номер близкого человека.<br>
+												</div>
+											</div>
+										</b>
+										<ul class="p-filter__list">
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter2" id="filteritem12">
+												<label for="filteritem12">
+													смартфон
+												</label>
+											</li>
+											<li class="p-filter__item disabled">
+												<input type="checkbox" name="filter2" id="filteritem13">
+												<label for="filteritem13">
+													телефон
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="p-filter__block">
+										<b class="p-filter__subtitle">
+											Линейка
+										</b>
+										<div class="p-filter__listhidden" style="display: block;">
+											<div class="p-filter__scroll" style="margin-top: 0;">
+												<b class="p-filter__letter">
+													ASUS
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter3" id="filteritem14">
+														<label for="filteritem14">
+															iPhone 6
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter3" id="filteritem15">
+														<label for="filteritem15">
+															iPhone 6s
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter3" id="filteritem16">
+														<label for="filteritem16">
+															iPhone 7
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter3" id="filteritem17">
+														<label for="filteritem17">
+															iPhone 8
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter3" id="filteritem18">
+														<label for="filteritem18">
+															iPhone SE
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter3" id="filteritem19">
+														<label for="filteritem19">
+															iPhone X
+														</label>
+													</li>
+												</ul>
+												<b class="p-filter__letter">
+													Archos
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter3" id="filteritem20">
+														<label for="filteritem20">
+															Access
+														</label>
+													</li>
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter1" id="filteritem6">
+														<label for="filteritem6">
+															Core
+														</label>
+													</li>
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter1" id="filteritem6">
+														<label for="filteritem6">
+															Sense
+														</label>
+													</li>
+												</ul>
+												<b class="p-filter__letter">
+													DOOGEE
+												</b>
+												<ul class="p-filter__list">
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter1" id="filteritem6">
+														<label for="filteritem6">
+															BL
+														</label>
+													</li>
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter1" id="filteritem6">
+														<label for="filteritem6">
+															X
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<ul class="p-filter__list p-filter__list-bold">
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter4" id="filteritem30">
+												<label for="filteritem30">
+													Android
+												</label>
+											</li>
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter4" id="filteritem31">
+												<label for="filteritem31">
+													iOS
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="p-filter__block">
+										<b class="p-filter__subtitle">
+											Диагоноль экрана
+											<a href="#" class="p-filter__infbtn">?</a>
+											<div class="p-filter__popup">
+												<div class="p-filter__trang"></div>
+												<div class="p-filter__popupwp">
+													<h2>Диагональ экрана</h2>
+													Размер экрана по диагонали.<br> Обычно измеряется в дюймах (1 дюйм равен 2.54 см). Чем больше диагональ экрана, тем комфортнее пользоваться мобильным телефоном, но с тем же увеличиваются его размеры и энергопотребление.
+												</div>
+											</div>
+										</b>
+										<ul class="p-filter__list">
+											<li class="p-filter__item disabled">
+												<input type="checkbox" name="filter5" id="filteritem32">
+												<label for="filteritem32">
+													2.1"-2.9"
+												</label>
+											</li>
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter5" id="filteritem33">
+												<label for="filteritem33">
+													3"-4"
+												</label>
+											</li>
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter5" id="filteritem34">
+												<label for="filteritem34">
+													4.1"-4.9"
+												</label>
+											</li>
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter5" id="filteritem35">
+												<label for="filteritem35">
+													5"-5.4"
+												</label>
+											</li>
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter5" id="filteritem36">
+												<label for="filteritem36">
+													5.5"-5.9"
+												</label>
+											</li>
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter5" id="filteritem37">
+												<label for="filteritem37">
+													6" и больше
+												</label>
+											</li>
+											<li class="p-filter__item disabled">
+												<input type="checkbox" name="filter5" id="filteritem38">
+												<label for="filteritem38">
+													до 2"
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="p-filter__block">
+										<b class="p-filter__subtitle">
+											Разрешение экрана
+											<a href="#" class="p-filter__infbtn">?</a>
+											<div class="p-filter__popup">
+												<div class="p-filter__trang"></div>
+												<div class="p-filter__popupwp">
+													<h2>Разрешение экрана</h2>
+													Разрешение экрана по горизонтали и вертикали.<br> Чем выше разрешение экрана, тем выше качество изображения и тем больше информации можно разместить на нем. Особенно важно разрешение экрана для смартфонов, когда экран используется для чтения текста или для просмотра веб-страниц.
+												</div>
+											</div>
+										</b>
+										<div class="p-filter__listhidden p-filter__listhidden-width">
+											<div class="p-filter__scroll">
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem40">
+														<label for="filteritem40">
+															1280x720 (HD)
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem41">
+														<label for="filteritem41">
+															1920x1080 (Full HD)
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem42">
+														<label for="filteritem42">
+															1440x720
+														</label>
+													</li>
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter6" id="filteritem43">
+														<label for="filteritem43">
+															320x240
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem44">
+														<label for="filteritem44">
+															2160x1080
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem40">
+														<label for="filteritem40">
+															1280x720 (HD)
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem41">
+														<label for="filteritem41">
+															1920x1080 (Full HD)
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem42">
+														<label for="filteritem42">
+															1440x720
+														</label>
+													</li>
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter6" id="filteritem43">
+														<label for="filteritem43">
+															320x240
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem44">
+														<label for="filteritem44">
+															2160x1080
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem40">
+														<label for="filteritem40">
+															1280x720 (HD)
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem41">
+														<label for="filteritem41">
+															1920x1080 (Full HD)
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem42">
+														<label for="filteritem42">
+															1440x720
+														</label>
+													</li>
+													<li class="p-filter__item disabled">
+														<input type="checkbox" name="filter6" id="filteritem43">
+														<label for="filteritem43">
+															320x240
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem44">
+														<label for="filteritem44">
+															2160x1080
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="p-filter__listvisible p-filter__listvisible-width">
+											<ul class="p-filter__list">
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem40">
+													<label for="filteritem40">
+														1280x720 (HD)
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem41">
+													<label for="filteritem41">
+														1920x1080 (Full HD)
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem42">
+													<label for="filteritem42">
+														1440x720
+													</label>
+												</li>
+												<li class="p-filter__item disabled">
+													<input type="checkbox" name="filter6" id="filteritem43">
+													<label for="filteritem43">
+														320x240
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem44">
+													<label for="filteritem44">
+														2160x1080
+													</label>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="p-filter__more p-filter__more-width">
+											Показать все
+										</a>
+										<ul class="p-filter__list p-filter__list-bold">
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter4" id="filteritem30">
+												<label for="filteritem30">
+													4G LTE
+												</label>
+											</li>
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter4" id="filteritem31">
+												<label for="filteritem31">
+													2 SIM-карты
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="p-filter__block">
+										<b class="p-filter__subtitle">
+											Память
+											<a href="#" class="p-filter__infbtn">?</a>
+											<div class="p-filter__popup">
+												<div class="p-filter__trang"></div>
+												<div class="p-filter__popupwp">
+													<h2>Память</h2>
+													Размер встроенной энергонезависимой памяти. <br> Практически все современные модели оснащаются встроенной памятью, реализованной на микросхемах Flash. Встроенная память используется для хранения программ и данных. Для самых простых моделей телефонов размер памяти не имеет значения. Однако если телефон нужен для игр, прослушивания музыки, просмотра фотографий и видеороликов, то при покупке рекомендуется обратить внимание на эту характеристику. <br> Размер встроенной памяти является важным параметром при выборе смартфона, особенно при отсутствии у него слота для карт памяти.
+												</div>
+											</div>
+										</b>
+										<div class="p-filter__listhidden p-filter__listhidden-memor">
+											<div class="p-filter__scroll">
+												<ul class="p-filter__list">
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem40">
+														<label for="filteritem40">
+															16 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem41">
+														<label for="filteritem41">
+															32 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem42">
+														<label for="filteritem42">
+															64 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem43">
+														<label for="filteritem43">
+															128 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem44">
+														<label for="filteritem44">
+															256 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem40">
+														<label for="filteritem40">
+															16 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem41">
+														<label for="filteritem41">
+															32 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem42">
+														<label for="filteritem42">
+															64 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem43">
+														<label for="filteritem43">
+															128 Гб
+														</label>
+													</li>
+													<li class="p-filter__item">
+														<input type="checkbox" name="filter6" id="filteritem44">
+														<label for="filteritem44">
+															256 Гб
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="p-filter__listvisible p-filter__listvisible-memor">
+											<ul class="p-filter__list">
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem40">
+													<label for="filteritem40">
+														16 Гб
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem41">
+													<label for="filteritem41">
+														32 Гб
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem42">
+													<label for="filteritem42">
+														64 Гб
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem43">
+													<label for="filteritem43">
+														128 Гб
+													</label>
+												</li>
+												<li class="p-filter__item">
+													<input type="checkbox" name="filter6" id="filteritem44">
+													<label for="filteritem44">
+														256 Гб
+													</label>
+												</li>
+											</ul>
+										</div>
+										<a href="#" class="p-filter__more p-filter__more-memor">
+											Показать все
+										</a>
+										<ul class="p-filter__list p-filter__list-bold">
+											<li class="p-filter__item">
+												<input type="checkbox" name="filter4" id="filteritem30">
+												<label for="filteritem30">
+													Слот для карты памяти
+												</label>
 											</li>
 										</ul>
 									</div>
