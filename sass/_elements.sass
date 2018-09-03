@@ -1567,6 +1567,8 @@
 			border-color: #fd8949
 		input:checked + label::after
 			display: block
+	&__list
+
 	&__listhidden
 		display: none
 	&__letter
@@ -1605,14 +1607,17 @@
 			background-image: linear-gradient(0deg,#f7f7f7 0,hsla(0,0%,100%,.001))
 	&__more
 		color: #6a3df7
-		font-size: 14px
+		font-size: 13px
 		line-height: 1.6
 		display: inline-block
 		padding: 5px 0
+		margin-top: 5px
+		outline: none
 		&:hover
 			text-decoration: none
 			color: #6a3df7
 			opacity: .7
+			outline: none
 	&__color
 		width: 100%
 		max-width: 173px
@@ -1809,3 +1814,207 @@
 			margin-top: 30px
 			label
 				font-family: "YSTMedium"
+
+.p-sort
+	font-size: 0
+	padding: 17px 21px
+	border: 1px solid #d7e1e6
+	border-radius: 4px
+	&__first
+		display: inline-block
+	&__title
+		display: block
+		font-size: 14px
+		line-height: 17px
+		color: #787878
+	&__item
+		display: inline-block
+		padding-left: 20px
+	&__link
+		display: block
+		font-size: 14px
+		line-height: 17px
+		color: #6a3df7
+		&:hover
+			text-decoration: none
+			color: #6a3df7
+			opacity: .7
+	&__item.active
+		.p-sort__link
+			color: #787878
+
+.p-product
+	padding: 16px
+	display: block
+	position: relative
+	&:hover
+		text-decoration: none
+		background-color: rgba(0,0,0,.03)
+	&__top
+		width: 100%
+		height: 175px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+	&__img
+		display: block
+		max-height: 100%
+	&__content
+		padding-top: 15px
+	&__price
+
+	&__new
+		font-size: 18px
+		color: #222
+		font-family: "YSTMedium"
+		line-height: 1
+		&::after
+			content: '₽'
+			font-size: 14px
+			color: #222
+			font-family: "YSTMedium"
+	&__old
+		font-size: 12px
+		color: #222
+		font-family: "YSTMedium"
+		line-height: 1
+		position: relative
+		margin-left: 6px
+		&::after
+			content: '₽'
+			font-size: 14px
+			color: #222
+			font-weight: 600
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			background-image: url(../img/icons/old.svg)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center center
+	&__hot
+		font-size: 18px
+		color: #f73d34
+		font-family: "YSTMedium"
+		line-height: 1
+		&::after
+			content: '₽'
+			font-size: 14px
+			color: #f73d34
+			font-weight: 600
+	&__title
+		font-size: 14px
+		line-height: 18px
+		margin: 8px 0 3px
+		color: #222
+		display: block
+		height: 54px
+		overflow: hidden
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 12px
+		height: 12px
+	.p-todaydiscount__assessment
+		font-size: 12px
+		line-height: 12px
+	&__count
+		display: block
+		color: #787878
+		font-size: 12px
+		line-height: 16px
+	.p-sliderdiscounts__discounts
+		left: 16px
+		top: 16px
+		font-family: "YSTMedium"
+		width: 46px
+		height: 25px
+	&__morewp
+		padding-top: 40px
+	&__more
+		display: block
+		height: 49px
+		line-height: 49px
+		font-size: 14px
+		background-color: #fafaf9
+		border-radius: 4px
+		text-align: center
+		color: #222
+		font-weight: bold
+		text-transform: uppercase
+		&:hover
+			background-color: #ccc
+			text-decoration: none
+			color: #222
+
+.p-pagin
+	font-size: 0
+	&__link
+		font-size: 14px
+		line-height: 50px
+		height: 50px
+		color: #050505
+		display: block
+		text-align: center
+		min-width: 50px
+		border: 2px solid #e6e6e6
+		border-radius: 4px
+		&:hover
+			text-decoration: none
+			color: #050505
+	&__item
+		display: inline-block
+		&-prev
+			padding-right: 13px
+			.p-pagin__link
+				position: relative
+				padding-left: 30px
+				padding-right: 15px
+				&::before
+					content: ''
+					width: 7px
+					height: 11px
+					background-size: cover
+					background-image: url(../img/icons/Shape.svg)
+					background-repeat: no-repeat
+					position: absolute
+					left: 12px
+					top: 19px
+		&-next
+			padding-left: 13px
+			.p-pagin__link
+				position: relative
+				padding-right: 30px
+				padding-left: 15px
+				&::after
+					content: ''
+					width: 7px
+					height: 11px
+					transform: rotate(-180deg)
+					-webkit-transform: rotate(-180deg)
+					background-size: cover
+					background-image: url(../img/icons/Shape.svg)
+					background-repeat: no-repeat
+					position: absolute
+					right: 12px
+					top: 19px
+	&__item.active
+		.p-pagin__link
+			border-color: #ff7d35
+			background-color: #fdcc5a33
+
+.p-section
+	color: #222
+	font-size: 32px
+	line-height: 36px
+	font-family: "YSTMedium"
+	margin: 0
+	display: inline-block

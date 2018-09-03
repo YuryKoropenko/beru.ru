@@ -25,9 +25,12 @@ $(function() {
 		$('.'+thblock).show();
 	});
 
+
 	$('.p-filter__more-brend').text('Показать все');
 	$('.p-filter__more-width').text('Показать все');
 	$('.p-filter__more-memor').text('Показать все');
+	$('.p-filter__more-opmemor').text('Показать все');
+	$('.p-filter__more-acmemor').text('Показать все');
 	/*фильтр сортировка*/
 	$('.p-filter__more-brend').on('click', function() {
 		$('.p-filter__listvisible-brend').toggle();
@@ -62,6 +65,36 @@ $(function() {
 	$('.p-filter__more-memor').on('click', function() {
 		$('.p-filter__listvisible-memor').toggle();
 		$('.p-filter__listhidden-memor').toggle();
+		var textbrend = $(this).text();
+
+		if(textbrend == 'Показать все') {
+			$(this).text('Свернуть');
+			return false;
+		}
+		if(textbrend == 'Свернуть') {
+			$(this).text('Показать все');
+			return false;
+		}
+	});
+
+	$('.p-filter__more-opmemor').on('click', function() {
+		$('.p-filter__listvisible-opmemor').toggle();
+		$('.p-filter__listhidden-opmemor').toggle();
+		var textbrend = $(this).text();
+
+		if(textbrend == 'Показать все') {
+			$(this).text('Свернуть');
+			return false;
+		}
+		if(textbrend == 'Свернуть') {
+			$(this).text('Показать все');
+			return false;
+		}
+	});
+
+	$('.p-filter__more-acmemor').on('click', function() {
+		$('.p-filter__listvisible-acmemor').toggle();
+		$('.p-filter__listhidden-acmemor').toggle();
 		var textbrend = $(this).text();
 
 		if(textbrend == 'Показать все') {
