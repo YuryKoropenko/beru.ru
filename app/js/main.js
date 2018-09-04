@@ -107,6 +107,12 @@ $(function() {
 		}
 	});
 
+	$('.p-card__infobtn').on('click', function() {
+		$(this).parent('.p-card__infotov').children('.p-card__infotovitem-hidden').show();
+		$(this).hide();
+		return false;
+	});
+
 	$('.p-filter__colorlink').hover(function() {
 		$(this).parent().children('.p-filter__colortext').stop(false, true).fadeIn(200);
 	}, function() {
@@ -128,6 +134,32 @@ $(function() {
 				event.stopPropagation();
 			});
 		return false
+	});
+
+	/*фильтр*/
+	$('.p-filter__mobbutton').on('click', function() {
+		$('.p-filter').toggle();
+		$(document).click(function(event) {
+			if ($(event.target).closest('.p-filter').length) return;
+				$('.p-filter').hide();
+				event.stopPropagation();
+			});
+		return false;
+	});
+
+	/*Фильтр электроники*/
+	$('.p-filtercat__more').on('click', function() {
+		$(this).parent().children('.p-filtercat__list-hidden').toggle();
+		var textbrend = $(this).text();
+
+		if(textbrend == 'Показать все') {
+			$(this).text('Свернуть');
+			return false;
+		}
+		if(textbrend == 'Свернуть') {
+			$(this).text('Показать все');
+			return false;
+		}
 	});
 
 });

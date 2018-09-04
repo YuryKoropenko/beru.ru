@@ -1850,6 +1850,9 @@
 	&:hover
 		text-decoration: none
 		background-color: rgba(0,0,0,.03)
+		.p-product__img
+			transform: translateZ(0) scale(.93)
+			-webkit-transform: translateZ(0) scale(.93)
 	&__top
 		width: 100%
 		height: 175px
@@ -1863,6 +1866,11 @@
 	&__img
 		display: block
 		max-height: 100%
+		width: auto !important
+		-webkit-transition: .3s ease-out
+		-moz-transition: .3s ease-out
+		-o-transition: .3s ease-out
+		transition: .3s ease-out
 	&__content
 		padding-top: 15px
 	&__price
@@ -2018,3 +2026,328 @@
 	font-family: "YSTMedium"
 	margin: 0
 	display: inline-block
+
+.p-filtercat
+	&__block
+		display: block
+		padding-bottom: 24px
+	&__title
+		display: block
+		padding-bottom: 12px
+		font-size: 14px
+		line-height: 1.4em
+		color: #2b2b2b
+		font-family: "YSTBold"
+		&:hover
+			text-decoration: none
+			color: #2b2b2b
+			opacity: .7
+	&__list
+		&-visible
+		&-hidden
+			display: none
+	&__item
+		display: block
+		padding: 2px 0
+	&__link
+		display: inline-block
+		font-size: 14px
+		line-height: 16px
+		color: #2b2b2b
+		&:hover
+			text-decoration: none
+			color: #2b2b2b
+			opacity: .7
+	&__more
+		display: inline-block
+		color: #6a3df7
+		padding-top: 9px
+		font-size: 14px
+		padding-bottom: 4px
+		line-height: 16px
+		&:hover
+			text-decoration: none
+			color: #6a3df7
+			opacity: .7
+
+.p-ban
+	display: block
+	width: 100%
+	&__img
+		display: block
+		width: 100%
+		height: auto
+
+.p-tovarslider
+	&__item
+		.br-theme-fontawesome-stars-o .br-widget
+			height: 12px
+		.p-sliderdiscounts__row
+			padding-top: 6px
+		.p-product .p-todaydiscount__assessment
+			font-size: 14px
+		.p-product__title
+			height: auto
+			margin-bottom: 6px
+	.owl-prev
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		left: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.owl-next
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		right: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.disabled
+		display: none !important
+
+.p-showall
+	display: inline-block
+	font-size: 14px
+	line-height: 18px
+	color: #6a3df7
+	position: relative
+	padding-right: 10px
+	svg
+		position: absolute
+		display: block
+		width: 6px
+		height: 16px
+		background-size: cover
+		right: 0
+		top: 50%
+		margin-top: -8px
+		fill: #6a3df7
+	&:hover
+		text-decoration: none
+		color: #6a3df7
+		opacity: .7
+
+.p-card
+	&__slider
+		position: relative
+		padding-left: 36 + 64 + px
+	&__link
+		height: 550px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		width: 100%
+		justify-content: center
+		align-items: center
+	&__item
+	&__img
+		display: block
+		max-height: 100%
+		width: auto !important
+	.owl-dots
+		position: absolute
+		left: 0
+		top: 0
+		.owl-dot
+			width: 64px
+			height: 64px
+			display: block
+			padding: 6px !important
+			border: 2px solid transparent
+			border-radius: 4px
+			margin-bottom: 12px
+			span
+				display: block
+				width: 100%
+				height: 100%
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: contain
+			&:hover
+				border-color: #fd8949
+				background-color: rgba(255,242,100,.1)
+		.owl-dot.active
+			border-color: #fd8949
+			background-color: rgba(255,242,100,.1)
+	&__title
+		display: block
+		width: 100%
+		color: #222
+		font-size: 28px
+		line-height: 36px
+		font-family: "YSTMedium"
+		padding-bottom: 12px
+	.p-sliderdiscounts__row
+		padding-bottom: 24px
+		width: 100%
+		border-bottom: 1px solid #ececec
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 16px
+		height: 16px
+	.br-theme-fontawesome-stars-o .br-widget
+		height: 16px
+	.p-todaydiscount__assessment
+		font-size: 16px
+		line-height: 16px
+	&__price
+		padding-top: 26px
+		span
+			font-size: 32px
+			display: block
+			color: #222
+			font-family: "YSTBold"
+			&::after
+				content: '₽'
+				font-size: 22px
+	&__status
+		font-size: 16px
+		line-height: 22px
+		font-family: "YSTMedium"
+	&__basket
+		display: block
+		background-color: #3e2d8f
+		height: 52px
+		line-height: 52px
+		max-width: 330px
+		width: 100%
+		font-size: 18px
+		border-radius: 4px
+		text-align: center
+		color: #fff
+		margin-top: 16px
+		font-family: "YSTMedium"
+		&:hover
+			text-decoration: none
+			color: #fff
+	&__info
+		padding-top: 26px
+	&__infoitem
+		display: block
+		font-size: 16px
+		line-height: 18px
+		padding: 4px 0 4px 36px
+		position: relative
+		span
+			font-family: "YSTBold"
+			color: #16c67a
+		i
+			position: absolute
+			display: block
+			left: 0
+			top: 50%
+			font-size: 18px
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			color: #222
+	&__action
+		display: inline-block
+		margin-top: 16px
+		color: #999
+		font-size: 16px
+		line-height: 22px
+		&:hover
+			text-decoration: none
+			color: #999
+			opacity: .7
+	&__zag
+		display: block
+		font-size: 18px
+		line-height: 24px
+		color: #222
+		padding-top: 26px
+		font-family: "YSTMedium"
+	&__infotov
+		padding-top: 8px
+		margin-bottom: 2px
+		position: relative
+		display: inline-block
+		clear: both
+	&__infotovitem
+		padding-left: 16px
+		margin-bottom: 6px
+		font-size: 16px
+		line-height: 22px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 6px
+			height: 6px
+			background-color: #f73d34
+			border-radius: 50%
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -3px
+		&-hidden
+			display: none
+	&__infobtn
+		font-size: 26px
+		line-height: 2px
+		width: 30px
+		height: 18px
+		text-align: center
+		color: #222
+		background-color: #ececec
+		display: block
+		position: absolute
+		right: 0
+		bottom: 8px
+		&:hover
+			background-color: #dcdcdc
+			text-decoration: none
+			color: #222
+	&__infoall
+		font-size: 16px
+		line-height: 22px
+		display: block
+		color: #6a3df7
+		&:hover
+			text-decoration: none
+			color: #6a3df7
+			opacity: .7

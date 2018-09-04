@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Заголовок</title>
+<!--
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="libs/bootstrap-4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fontawesome-free-5.2.0/css/all.min.css">
+	<link rel="stylesheet" href="libs/animate.css">
+	<link rel="stylesheet" href="css/fa-star.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- End_Styles -->
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3">
+						<div class="header__h-region">
+							<div class="h-region">
+								Регион:
+								<a href="#" class="h-region__link">
+									Москва
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-9">
+						<div class="header__h-menu">
+							<ul class="h-menu">
+								<li class="h-menu__item h-menu__item-first">
+									Отличные скидки. Надо
+									<a href="#" class="h-menu__link">
+										брать
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Бесплатная
+									<a href="#" class="h-menu__link">
+										доставка
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Удобная
+									<a href="#" class="h-menu__link">
+										оплата
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Лёгкий
+									<a href="#" class="h-menu__link">
+										возврат
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container" style="height: 100%;">
+				<div class="row align-items-center" style="height: 100%;">
+					<div class="col-lg-2 col-md-3">
+						<div class="header__h-logo">
+							<a href="/" class="h-logo">
+								<img src="img/logo.svg" alt="беру!" class="h-logo__img">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-9">
+						<div class="header__h-center">
+							<div class="header__h-catalog">
+								<a href="#" class="h-catalog">
+									<span class="h-catalog__text">
+										<i class="h-catalog__icon">
+											<span class="h-catalog__line"></span>
+											<span class="h-catalog__line"></span>
+											<span class="h-catalog__line"></span>
+										</i>
+										Каталог товаров
+									</span>
+								</a>
+							</div>
+							<div class="header__h-search">
+								<form action="">
+									<div class="h-search">
+										<input type="text" class="h-search__input" placeholder="Я хочу купить...">
+										<input type="submit" class="h-search__button" value="Найти">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="header__h-right">
+							<div class="header__h-come">
+								<a href="#" class="h-come">
+									Войти в аккаунт
+								</a>
+							</div>
+							<div class="header__h-basket">
+								<a href="#" class="h-basket">
+									Корзина
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__catmenu">
+			<div class="h-catmenu">
+				<div class="h-catmenu__left">
+					<ul class="h-catmenu__menu">
+						<li class="h-catmenu__menuitem active" name="cat1">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/1.png);"></i>
+								Электроника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem" name="cat2">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/2.png);"></i>
+								Компьютерная техника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/3.png);"></i>
+								Бытовая техника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/4.png);"></i>
+								Дом и дача
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/5.png);"></i>
+								Детские товары
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/6.png);"></i>
+								Товары для животных
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/7.png);"></i>
+								Красота и здоровье
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/8.jpg);"></i>
+								Сувенирная продукция
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="h-catmenu__right">
+					<div class="h-catmenu__hidden cat1">
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/9.png);"></i>
+								Телефоны
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Мобильные телефоны
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Умные часы и браслеты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары для телефонов
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Чехлы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Внешние аккумуляторы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Наушники и Bluetooth-гарнитуры
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/10.png);"></i>
+								Аудио и видиотехника
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Телевизоры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аудиотехника
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										DVD и Blu-ray плееры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Мониторы
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/11.png);"></i>
+								Фото и видеокамеры
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Фотоаппараты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Объективы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Экшн-камеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Квадрокоптеры с камерой
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Карты памяти
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Штативы и моноподы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Фотопринтеры
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/12.png);"></i>
+								Портактивная техника
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Наушники и Bluetooth-гарнитуры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Портативная акустика
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Планшеты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Квадрокоптеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Цыфровые плееры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Диктофоны
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Магнитолы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Пульсометры и шагометры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Портативные рекордеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Ручные стабилизаторы и стедикамы
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/13.png);"></i>
+								Игровые приставки
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игровые приставки
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игры для приставок
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/14.png);"></i>
+								GPS-навигация
+							</a>
+						</div>
+					</div>
+					<div class="h-catmenu__hidden cat2">
+						test
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page page-white">
+		<div class="page__index">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-path">
+							<ul class="p-path">
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Мобильные телефоны
+									</a>
+								</li>
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Xiaomi
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-7 col-lg-7">
+						<div class="page__p-card">
+							<div class="p-card">
+								<div class="p-card__slider owl-carousel">
+									<div class="p-card__item">
+										<a href="#" class="p-card__link">
+											<img src="img/card1.jpg" alt="alt" class="p-card__img">
+										</a>
+									</div>
+									<div class="p-card__item">
+										<a href="#" class="p-card__link">
+											<img src="img/card2.jpg" alt="alt" class="p-card__img">
+										</a>
+									</div>
+									<div class="p-card__item">
+										<a href="#" class="p-card__link">
+											<img src="img/card3.jpg" alt="alt" class="p-card__img">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-5">
+						<div class="page__p-card">
+							<div class="p-card">
+								<h1 class="p-card__title">
+									Смартфон Xiaomi Redmi 5 Plus 4/64GB золотистый
+								</h1>
+								<div class="p-sliderdiscounts__row">
+									<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+									<span class="p-todaydiscount__assessment">
+										214 отзывов
+									</span>
+								</div>
+								<div class="p-card__price">
+									<span>
+										14 130
+									</span>
+									<div class="p-card__status" style="color: #16c67a;">
+										В наличии на складе
+									</div>
+								</div>
+								<a href="#" class="p-card__basket">
+									Добавить в корзину
+								</a>
+								<ul class="p-card__info">
+									<li class="p-card__infoitem">
+										<i class="fas fa-truck"></i>
+										Доставка завтра, 5 сентября - <span>бесплатно</span>
+									</li>
+									<li class="p-card__infoitem">
+										<i class="fas fa-map-marker-alt"></i>
+										Самовывоз завтра, 5 сентября - <span>бесплатно</span>
+									</li>
+									<li class="p-card__infoitem">
+										<i class="fab fa-discourse"></i>
+										Товар предоставлен продавцом ПОЗИТРОНИКА
+									</li>
+								</ul>
+								<a href="#" class="p-card__action">
+									Подробнее про условия доставки
+								</a>
+								<b class="p-card__zag">
+									Коротко о товаре
+								</b>
+								<ul class="p-card__infotov">
+									<li class="p-card__infotovitem">
+										Смартфон на платформе Android
+									</li>
+									<li class="p-card__infotovitem">
+										Поддержка двух SIM-карт
+									</li>
+									<li class="p-card__infotovitem">
+										Экран 5.99", разрешение 2160x1080
+									</li>
+									<li class="p-card__infotovitem">
+										Камера 12 МП, автофокус, F/2.2
+									</li>
+									<li class="p-card__infotovitem p-card__infotovitem-hidden">
+										Память 64 Гб, слот для карты памяти
+									</li>
+									<li class="p-card__infotovitem p-card__infotovitem-hidden">
+										3G, 4G LTE, Wi-Fi, Bluetooth, GPS, ГЛОНАСС
+									</li>
+									<li class="p-card__infotovitem p-card__infotovitem-hidden">
+										Объем оперативной памяти 4 Гб
+									</li>
+									<li class="p-card__infotovitem p-card__infotovitem-hidden">
+										Аккумулятор 4000 мА-ч
+									</li>
+									<li class="p-card__infotovitem p-card__infotovitem-hidden">
+										Вес 180 г, ШxВxТ 75.45x158.50x8.05 мм
+									</li>
+									<a href="#" class="p-card__infobtn">...</a>
+								</ul>
+								<a href="#" class="p-card__infoall">
+									Все характеристики
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-title">
+							<b class="p-title">
+								С этим товаром смотрят
+							</b>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-tovslider">
+							<div class="p-tovslider owl-carousel">
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-45%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov9.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													549
+												</span>
+												<span class="p-sliderdiscounts__old">
+													990
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													Ещё нет оценок
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Набор Gillette Mach 3 Turbo Лига Справедливости бритва, очки виртуальной реальности, кассеты, сменные кассеты: 3 шт
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov10.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__standart">
+													28
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													Еще нет оценок
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Сок ФрутоНяня из яблок осветленный, c 3 лет 0.5 л
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov11.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__standart">
+													414
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													Еще нет оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Пюре Bebivita индейка (с 6 месяцев) 100 г, 6 шт
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-title">
+							<b class="p-title">
+								С этим товаром покупают
+							</b>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-tovslider">
+							<div class="p-tovslider owl-carousel">
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-45%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov9.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													549
+												</span>
+												<span class="p-sliderdiscounts__old">
+													990
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													Ещё нет оценок
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Набор Gillette Mach 3 Turbo Лига Справедливости бритва, очки виртуальной реальности, кассеты, сменные кассеты: 3 шт
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov10.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__standart">
+													28
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													Еще нет оценок
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Сок ФрутоНяня из яблок осветленный, c 3 лет 0.5 л
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov11.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__standart">
+													414
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													Еще нет оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Пюре Bebivita индейка (с 6 месяцев) 100 г, 6 шт
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+								<div class="p-tovslider__item p-prodsdiscounts__item p-sliderdiscounts__item">
+									<a href="#" class="p-sliderdiscounts__link">
+										<span class="p-sliderdiscounts__discounts">
+											-11%
+										</span>
+										<div class="p-sliderdiscounts__top">
+											<img src="img/tov1.jpg" alt="alt" class="p-sliderdiscounts__img">
+										</div>
+										<div class="p-sliderdiscounts__content">
+											<div class="p-sliderdiscounts__price">
+												<span class="p-sliderdiscounts__new">
+													7 078
+												</span>
+												<span class="p-sliderdiscounts__old">
+													7 989
+												</span>
+											</div>
+											<div class="p-sliderdiscounts__row">
+												<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<span class="p-todaydiscount__assessment">
+													72 оценки
+												</span>
+											</div>
+											<h2 class="p-sliderdiscounts__title">
+												Перфаратор Makita HR2470
+											</h2>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__skidka">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-5">
+						<div class="page__p-discount">
+							<div class="p-discount">
+								<div class="p-discount__text">
+									<h2>
+										Скидка 500 ₽ на первый<br>заказ через приложение
+									</h2>
+									<span>
+										Промокод действует на заказы от 2 500 ₽ в приложении «Беру».<br>Получить скидку можно в течение 2 месяцев после установки приложения
+									</span>
+								</div>
+								<ul class="p-discount__application">
+									<li class="p-discount__item">
+										<a href="#" class="p-discount__link">
+											<img src="img/icons/app-ios.svg" alt="alt" class="p-discount__img">
+										</a>
+									</li>
+									<li class="p-discount__item">
+										<a href="#" class="p-discount__link">
+											<img src="img/icons/app-android.svg" alt="alt" class="p-discount__img">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-7">
+						<div class="page__p-discount">
+							<div class="p-discount">
+								<div class="p-discount__baner">
+									<img src="img/phone.png" alt="alt" class="p-discount__phone">
+									<div class="p-discount__content">
+										<div class="p-discount__wrapper">
+											<h2 class="p-discount__subtitle">
+												BERU_MOb
+											</h2>
+											<p class="p-discount__subdescription">
+												Используйте промокод<br>в приложении
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-8 col-md-9">
+						<div class="footer__f-nav">
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Меню
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Обратная связь
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Мои заказы
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Настройки
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Как купить
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Оплата и доставка
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Возврат
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Помощь
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Партнёрам
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Как начать сотрудничество
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Помощь
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-4 col-md-3">
+						<div class="footer__f-logo">
+							<a href="/" class="f-logo">
+								<img src="img/logo.svg" alt="alt" class="f-logo__img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-3">
+						<div class="footer__f-sogl">
+							<a href="#" class="f-sogl">
+								Пользовательское соглашение
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-9">
+						<div class="footer__f-copy">
+							<div class="f-copy">
+								© 2018 ООО «Яндекс.Маркет» — совместное предприятие с участием Яндекса и группы компаний Сбербанк
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="libs/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/jquerybarrating/dist/jquery.barrating.min.js"></script>
+	<script>
+
+		/*Слайдер с товарами*/
+		$('.p-card__slider').owlCarousel({
+			loop:false,
+			margin: 12,
+			dots:true,
+			nav:false,
+			animateOut: 'fadeOut',
+			items:1
+		});
+
+		/*Слайдер с товарами*/
+		$('.p-tovslider').owlCarousel({
+			loop:false,
+			margin: 12,
+			dots: false,
+			slideBy: 5,
+			nav:true,
+			responsive:{
+				0:{
+					items:1,
+					margin: 0
+				},
+				768:{
+					items:4
+				},
+				992:{
+					items:6
+				}
+			}
+		});
+
+		$(document).ready(function() {
+			dotcount = 1;
+			$('.p-card__slider .owl-dot').each(function() {
+				$(this).addClass( 'dotnumber' + dotcount);
+				$(this).attr('data-info', dotcount);
+				dotcount=dotcount+1;
+			});
+			slidecount = 1;
+			$('.p-card__slider .owl-item').not('.cloned').each(function() {
+				$(this).addClass('slidenumber' + slidecount);
+				slidecount=slidecount+1;
+			});
+			$('.p-card__slider .owl-dot').each(function() {
+				grab = $(this).data('info');
+				slidegrab = $('.slidenumber'+ grab +' img').attr('src');
+				console.log(slidegrab);
+				$(this).children('span').css("background-image", "url("+slidegrab+")");  
+			});
+		});
+
+		/*Рейтинг звезды*/
+		$(function() {
+			var currentRating = $('.p-todaydiscount__rating').data('current-rating');
+			$('.stars-example-fontawesome-o .current-rating')
+			.find('span')
+			.html(currentRating);
+			$('.stars-example-fontawesome-o .clear-rating').on('click', function(event) {
+				event.preventDefault();
+				$('.p-todaydiscount__rating')
+				.barrating('clear');
+			});
+			$('.p-todaydiscount__rating').barrating({
+				theme: 'fontawesome-stars-o',
+				showSelectedRating: false,
+				initialRating: currentRating,
+				onSelect: function(value, text) {
+					if (!value) {
+						$('.p-todaydiscount__rating')
+						.barrating('clear');
+					} else {
+						$('.stars-example-fontawesome-o .current-rating')
+						.addClass('hidden');
+
+						$('.stars-example-fontawesome-o .your-rating')
+						.removeClass('hidden')
+						.find('span')
+						.html(value);
+					}
+				},
+				onClear: function(value, text) {
+					$('.stars-example-fontawesome-o')
+					.find('.current-rating')
+					.removeClass('hidden')
+					.end()
+					.find('.your-rating')
+					.addClass('hidden');
+				}
+			});
+		});
+
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- End_Scripts -->
+</body>
+</html>

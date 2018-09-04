@@ -24,6 +24,15 @@
   .f-copy, .f-sogl {
     font-size: 13px;
   }
+  .page__p-sort {
+    margin-left: -41px;
+  }
+  .page__p-product {
+    margin-left: -41px;
+  }
+  .page__p-product hr {
+    display: none;
+  }
   /**/
 }
 
@@ -198,6 +207,52 @@
   .h-catmenu {
     width: 100%;
   }
+  .page__p-filter {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page__p-sort,
+  .page__p-product {
+    margin-left: 0;
+  }
+  .p-filter__mobbutton {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+    font-family: "YSTMedium";
+    line-height: 49px;
+    height: 49px;
+    display: block;
+    text-align: center;
+    background-color: #6b25fc;
+    border-radius: 4px;
+    width: 100%;
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+  }
+  .p-filter__mobbutton:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  .p-filter {
+    padding-top: 15px;
+    display: none;
+  }
+  .page__p-sort {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .page__p-filtercat {
+    padding-top: 15px;
+  }
+  .page__p-ban {
+    padding-top: 15px;
+  }
   /**/
 }
 
@@ -295,6 +350,46 @@
     margin-left: 15px;
     width: auto;
   }
+  .p-sort__first {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  .p-sort__item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .p-pagin__item-prev {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    padding-bottom: 8px;
+  }
+  .p-pagin__item-next {
+    width: 100%;
+    text-align: right;
+    padding-left: 0;
+    padding-top: 8px;
+  }
+  .p-pagin {
+    text-align: center;
+  }
+  .p-section {
+    font-size: 26px;
+  }
+  .page__p-section {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .p-tovarslider .owl-prev {
+    left: -15px;
+  }
+  .p-tovarslider .owl-next {
+    right: -15px;
+  }
   /**/
 }
 
@@ -326,6 +421,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  .p-filter__mobbutton {
+    display: none;
+  }
   /**/
 }
 
