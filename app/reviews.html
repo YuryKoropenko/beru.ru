@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Заголовок</title>
+<!--
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="libs/bootstrap-4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fontawesome-free-5.2.0/css/all.min.css">
+	<link rel="stylesheet" href="libs/animate.css">
+	<link rel="stylesheet" href="css/fa-star.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- End_Styles -->
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3">
+						<div class="header__h-region">
+							<div class="h-region">
+								Регион:
+								<a href="#" class="h-region__link">
+									Москва
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-9">
+						<div class="header__h-menu">
+							<ul class="h-menu">
+								<li class="h-menu__item h-menu__item-first">
+									Отличные скидки. Надо
+									<a href="#" class="h-menu__link">
+										брать
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Бесплатная
+									<a href="#" class="h-menu__link">
+										доставка
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Удобная
+									<a href="#" class="h-menu__link">
+										оплата
+									</a>
+								</li>
+								<li class="h-menu__item">
+									Лёгкий
+									<a href="#" class="h-menu__link">
+										возврат
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container" style="height: 100%;">
+				<div class="row align-items-center" style="height: 100%;">
+					<div class="col-lg-2 col-md-3">
+						<div class="header__h-logo">
+							<a href="/" class="h-logo">
+								<img src="img/logo.svg" alt="беру!" class="h-logo__img">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-9">
+						<div class="header__h-center">
+							<div class="header__h-catalog">
+								<a href="#" class="h-catalog">
+									<span class="h-catalog__text">
+										<i class="h-catalog__icon">
+											<span class="h-catalog__line"></span>
+											<span class="h-catalog__line"></span>
+											<span class="h-catalog__line"></span>
+										</i>
+										Каталог товаров
+									</span>
+								</a>
+							</div>
+							<div class="header__h-search">
+								<form action="">
+									<div class="h-search">
+										<input type="text" class="h-search__input" placeholder="Я хочу купить...">
+										<input type="submit" class="h-search__button" value="Найти">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="header__h-right">
+							<div class="header__h-come">
+								<a href="#" class="h-come">
+									Войти в аккаунт
+								</a>
+							</div>
+							<div class="header__h-basket">
+								<a href="#" class="h-basket">
+									Корзина
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__catmenu">
+			<div class="h-catmenu">
+				<div class="h-catmenu__left">
+					<ul class="h-catmenu__menu">
+						<li class="h-catmenu__menuitem active" name="cat1">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/1.png);"></i>
+								Электроника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem" name="cat2">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/2.png);"></i>
+								Компьютерная техника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/3.png);"></i>
+								Бытовая техника
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/4.png);"></i>
+								Дом и дача
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/5.png);"></i>
+								Детские товары
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/6.png);"></i>
+								Товары для животных
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/7.png);"></i>
+								Красота и здоровье
+							</a>
+						</li>
+						<li class="h-catmenu__menuitem">
+							<a href="#" class="h-catmenu__menulink">
+								<i class="h-catmenu__menuicon" style="background-image: url(img/catalogmenu/8.jpg);"></i>
+								Сувенирная продукция
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="h-catmenu__right">
+					<div class="h-catmenu__hidden cat1">
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/9.png);"></i>
+								Телефоны
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Мобильные телефоны
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Умные часы и браслеты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары для телефонов
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Чехлы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Внешние аккумуляторы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Наушники и Bluetooth-гарнитуры
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/10.png);"></i>
+								Аудио и видиотехника
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Телевизоры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аудиотехника
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										DVD и Blu-ray плееры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Мониторы
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/11.png);"></i>
+								Фото и видеокамеры
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Фотоаппараты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Объективы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Экшн-камеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Квадрокоптеры с камерой
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Карты памяти
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Штативы и моноподы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Фотопринтеры
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/12.png);"></i>
+								Портактивная техника
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Наушники и Bluetooth-гарнитуры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Портативная акустика
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Планшеты
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Квадрокоптеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Цыфровые плееры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Диктофоны
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Магнитолы
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Пульсометры и шагометры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Портативные рекордеры
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Ручные стабилизаторы и стедикамы
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/13.png);"></i>
+								Игровые приставки
+							</a>
+							<ul class="h-catmenu__list">
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игровые приставки
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Аксессуары
+									</a>
+								</li>
+								<li class="h-catmenu__item">
+									<a href="#" class="h-catmenu__link">
+										Игры для приставок
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="h-catmenu__cat">
+							<a href="#" class="h-catmenu__title">
+								<i class="h-catmenu__icon" style="background-image: url(img/catalogmenu/14.png);"></i>
+								GPS-навигация
+							</a>
+						</div>
+					</div>
+					<div class="h-catmenu__hidden cat2">
+						test
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page page-white page-white-scroll">
+		<div class="page__fixed">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-8">
+						<div class="page__p-carentitem">
+							<div class="p-carentitem p-carentitem-left">
+								<div class="p-carentitem__img" style="background-image: url('img/card1.jpg');"></div>
+								<div class="p-carentitem__title">
+									Смартфон Xiaomi Redmi 5 Plus 4/64GB золотистый
+									<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+								<div class="p-carentitem__bottom">
+									<span class="p-carentitem__price">
+										14 490
+									</span>
+									<a href="#" class="p-carentitem__btn">
+										В корзину
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="page__p-carentitem">
+							<div class="p-carentitem p-carentitem-right">
+								<div class="p-carentitem__list">
+									<li class="p-carentitem__item">
+										<a href="#" class="p-carentitem__link">
+											Описание
+										</a>
+									</li>
+									<li class="p-carentitem__item">
+										<a href="#" class="p-carentitem__link">
+											Характеристики
+										</a>
+									</li>
+									<li class="p-carentitem__item active">
+										<a href="#" class="p-carentitem__link">
+											Отзывы
+										</a>
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__index">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-path">
+							<ul class="p-path">
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Мобильные телефоны
+									</a>
+								</li>
+								<li class="p-path__item">
+									<a href="#" class="p-path__link">
+										Xiaomi
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-comment" style="margin-top: 0;">
+							<div class="p-comment">
+								<b class="p-comment__title">
+									Все отзывы
+								</b>
+								<div class="p-comment__right">
+									<a href="#" class="p-comment__btn">
+										Написать отзыв
+									</a>
+								</div>
+								<div class="p-comment__sort">
+									<ul class="p-comment__list">
+										<li class="p-comment__item">
+											Сортировать:
+										</li>
+										<li class="p-comment__item">
+											<a href="#" class="p-comment__link">
+												по дате
+											</a>
+										</li>
+										<li class="p-comment__item">
+											<a href="#" class="p-comment__link">
+												по оценке
+											</a>
+										</li>
+										<li class="p-comment__item">
+											<a href="#" class="p-comment__link">
+												по полезности
+											</a>
+										</li>
+									</ul>
+									<div class="p-comment__check">
+										<div class="p-filter__item">
+											<input type="checkbox" name="filter1" id="filteritem2">
+											<label for="filteritem2">
+												С фото
+											</label>
+										</div>
+									</div>
+									<div class="p-comment__check">
+										<div class="p-filter__item">
+											<input type="checkbox" name="filter1" id="filteritem2">
+											<label for="filteritem2">
+												От проверенных покупателей
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="page__p-comments">
+							<div class="p-comments">
+								<div class="p-comments">
+									<div class="p-comments__top" style="padding-left: 0;">
+										<div class="p-comments__name">
+											Пользователь скрыл свои данные
+										</div>
+										<ul class="p-commentssoc">
+											<li class="p-commentssoc__item">
+												<a href="#" class="p-commentssoc__link" style="background-image: url(img/icons/soc1.svg);"></a>
+											</li>
+										</ul>
+										<div class="p-polz">
+											<div class="p-polz__ver">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g fill="none" fill-rule="evenodd"><path class="image_name_cpa-buyer__shape" fill="#29AD2E" fill-rule="nonzero" d="M8.737 17.314l-1.28.572c-.555.25-1.21.074-1.566-.42l-.82-1.135c-.108-.147-.273-.243-.455-.262l-1.394-.143c-.605-.062-1.084-.54-1.146-1.147l-.144-1.394c-.018-.182-.114-.348-.262-.455l-1.136-.822c-.493-.357-.67-1.01-.42-1.567l.573-1.278c.075-.167.075-.358 0-.525l-.573-1.28c-.25-.555-.073-1.21.42-1.566l1.136-.82c.148-.108.244-.273.262-.455l.144-1.394c.062-.605.54-1.084 1.147-1.146l1.395-.144c.182-.018.347-.114.455-.262L5.89.532C6.25.04 6.903-.138 7.46.112l1.28.573c.166.075.357.075.524 0l1.28-.573c.555-.25 1.21-.073 1.566.42l.82 1.136c.108.148.274.244.456.262l1.394.144c.606.062 1.085.54 1.147 1.147l.143 1.395c.02.182.115.347.263.455l1.136.82c.494.358.67 1.012.42 1.568l-.572 1.28c-.075.166-.075.357 0 .524l.572 1.28c.25.555.074 1.21-.42 1.566l-1.135.82c-.147.108-.243.274-.262.456l-.143 1.394c-.062.606-.54 1.085-1.147 1.147l-1.394.143c-.182.02-.348.115-.455.263l-.822 1.136c-.357.494-1.01.67-1.567.42l-1.278-.572c-.167-.075-.358-.075-.525 0z"></path><path fill="#FFF" d="M14.396 6.738L8.1 12.898c-.07.068-.16.102-.25.102-.092 0-.182-.034-.25-.102l-3.496-3.42c-.14-.135-.14-.354 0-.49l1.17-1.145c.14-.136.363-.136.502 0l2.073 2.03 4.875-4.77c.138-.137.363-.137.5 0l1.17 1.144c.068.065.105.153.105.245s-.037.18-.104.246z"></path></g></svg>
+												Проверенный покупатель
+											</div>
+											<div class="p-polz__inf">
+												Пользователь купил этот товар на маркетплейсе Беру
+											</div>
+										</div>
+									</div>
+									<div class="p-comments__line">
+										<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<div class="p-comments__text">
+											отличный товар
+										</div>
+										<div class="p-comments__text">
+											Опыт использования: менее месяца
+										</div>
+									</div>
+									<div class="p-comments__content">
+										<b>Достоинства:</b><br>
+										<p>
+											* Нижеперечисленные достоинства относится к официальной международной версии, официально продаваемой в России - эта версия обозначается, как MEG7 *<br>(подробно напишу в разделе комментарий как отличить)
+										</p>
+										<ol>
+											<li>
+												1. Качественно собран из качественных материалов, ничего не скрепит, не люфтит, приятно держать в руке
+											</li>
+											<li>
+												2. Камера выше всяких похвал (модуль такой же, как в Mi A1), правда что бы раскрыть весь ее потенциал нужно установить GCAM благо это не очень сложно
+											</li>
+											<li>
+												3. Дизайн - даже по сравнению с более дорогим Xiaomi Redmi Note 5 выглядит интереснее, т.к. не копирует айфоновскую двойную камеру. Более самобытен, нет ощущения что держишь в руках просто примерную копию iphone X. На мой взгляд это очень хорошо.
+											</li>
+											<li>
+												4. Поддержка всех основных частот 3G и 4G в России (актуально для MEG7 версии)
+											</li>
+										</ol>
+										<br>
+										<b>Недостатки:</b><br>
+										<p>Даже после выхода Note 5 и в сравнении с ним, недостатков нет. кроме того, что можно нарваться на китайскую версию или восстановленный. По этому будьте внимательней (это в принципе ко всем смартфонам Xiaomi относится, их продается много, а люди часто бьют экраны, топят, давят и т.п., в общим "сырье" для производства восстанавленок есть в достатке).<br>Среди продавцов сейчас высокая конкуренция (не важно где покупаете, в Китае или в своем городе), и некоторые магазины идут на "хитрости", что бы и в прибыли остаться и предложить более низкую цену. В общем на мой взгляд иногда лучше немного переплатить, чем получить кирпич, которой и в СЦ то откажутся принимать на гарантийный ремонт. Что бы избежать "попадалова" следите, что бы смартфон был запаян в заводскую полиэтиленовую пленку.</p>
+										<br>
+										<b>Комментарий:</b><br>
+										<p>
+											Для России самая актуальная версия, это версия с номером модели MEG7, эту версию Xiaomi официально реализует на территории России.
+										</p>
+										<br>
+										<p>Этот номер указывается мелким шрифтом на обратной стороне смартфона - ПРЯМО НА МЕТАЛЛЕ ВНИЗУ. </p>
+										<br>
+										<p>В отличии от других версий в MEG7:</p>
+										<ol>
+											<li>
+												1. Полноценная поддержка Российского 4G LTE благодаря наличию FDD-LTE B20;
+											</li>
+											<li>
+												2. На задней крышке смартфона отсутствуют китайские иероглифы;
+											</li>
+											<li>
+												3. Зарядное устройство не требует переходника, т.е. уже для наших розеток;
+											</li>
+											<li>
+												4. Есть мнение, что в международную и в частности ту, что продают в России официально ставят более дорогие компоненты. Это не звучит странно, т.к. давно известно, что Xiaomi любит ставить в одну модель камеры и дисплеи от разных производителей. По логике "на экспорт" ставят лучшие компоненты, что бы не отпугивать покупателей с новых рынков.
+											</li>
+										</ol>
+										<p>Где смотреть надпись MEG7 приложил на фото:</p>
+									</div>
+									<div class="p-comments__bottom">
+										<div class="p-comments__data">
+											3 июля, Москва
+										</div>
+										<div class="p-comments__rait">
+											Полезно?
+											<a href="#" class="p-comments__like">
+												<i class="fas fa-thumbs-up"></i>
+												39
+											</a>
+											<a href="#" class="p-comments__dislike">
+												<i class="fas fa-thumbs-down"></i>
+												0
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="page__p-comments">
+							<div class="p-comments">
+								<div class="p-comments">
+									<div class="p-comments__top">
+										<div class="p-comments__img" style="background-image: url(img/icon-profil.jpg);"></div>
+										<div class="p-comments__name">
+											Шокин Леонид
+										</div>
+										<ul class="p-commentssoc">
+											<li class="p-commentssoc__item">
+												<a href="#" class="p-commentssoc__link" style="background-image: url(img/icons/soc1.svg);"></a>
+											</li>
+										</ul>
+										<div class="p-polz">
+											<div class="p-polz__ver">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g fill="none" fill-rule="evenodd"><path class="image_name_cpa-buyer__shape" fill="#29AD2E" fill-rule="nonzero" d="M8.737 17.314l-1.28.572c-.555.25-1.21.074-1.566-.42l-.82-1.135c-.108-.147-.273-.243-.455-.262l-1.394-.143c-.605-.062-1.084-.54-1.146-1.147l-.144-1.394c-.018-.182-.114-.348-.262-.455l-1.136-.822c-.493-.357-.67-1.01-.42-1.567l.573-1.278c.075-.167.075-.358 0-.525l-.573-1.28c-.25-.555-.073-1.21.42-1.566l1.136-.82c.148-.108.244-.273.262-.455l.144-1.394c.062-.605.54-1.084 1.147-1.146l1.395-.144c.182-.018.347-.114.455-.262L5.89.532C6.25.04 6.903-.138 7.46.112l1.28.573c.166.075.357.075.524 0l1.28-.573c.555-.25 1.21-.073 1.566.42l.82 1.136c.108.148.274.244.456.262l1.394.144c.606.062 1.085.54 1.147 1.147l.143 1.395c.02.182.115.347.263.455l1.136.82c.494.358.67 1.012.42 1.568l-.572 1.28c-.075.166-.075.357 0 .524l.572 1.28c.25.555.074 1.21-.42 1.566l-1.135.82c-.147.108-.243.274-.262.456l-.143 1.394c-.062.606-.54 1.085-1.147 1.147l-1.394.143c-.182.02-.348.115-.455.263l-.822 1.136c-.357.494-1.01.67-1.567.42l-1.278-.572c-.167-.075-.358-.075-.525 0z"></path><path fill="#FFF" d="M14.396 6.738L8.1 12.898c-.07.068-.16.102-.25.102-.092 0-.182-.034-.25-.102l-3.496-3.42c-.14-.135-.14-.354 0-.49l1.17-1.145c.14-.136.363-.136.502 0l2.073 2.03 4.875-4.77c.138-.137.363-.137.5 0l1.17 1.144c.068.065.105.153.105.245s-.037.18-.104.246z"></path></g></svg>
+												Проверенный покупатель
+											</div>
+											<div class="p-polz__inf">
+												Пользователь купил этот товар на маркетплейсе Беру
+											</div>
+										</div>
+									</div>
+									<div class="p-comments__line">
+										<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<div class="p-comments__text">
+											отличный товар
+										</div>
+										<div class="p-comments__text">
+											Опыт использования: менее месяца
+										</div>
+									</div>
+									<div class="p-comments__content">
+										<b>Достоинства:</b><br>
+										<p>
+											* Нижеперечисленные достоинства относится к официальной международной версии, официально продаваемой в России - эта версия обозначается, как MEG7 *<br>(подробно напишу в разделе комментарий как отличить)
+										</p>
+										<ol>
+											<li>
+												1. Качественно собран из качественных материалов, ничего не скрепит, не люфтит, приятно держать в руке
+											</li>
+											<li>
+												2. Камера выше всяких похвал (модуль такой же, как в Mi A1), правда что бы раскрыть весь ее потенциал нужно установить GCAM благо это не очень сложно
+											</li>
+											<li>
+												3. Дизайн - даже по сравнению с более дорогим Xiaomi Redmi Note 5 выглядит интереснее, т.к. не копирует айфоновскую двойную камеру. Более самобытен, нет ощущения что держишь в руках просто примерную копию iphone X. На мой взгляд это очень хорошо.
+											</li>
+											<li>
+												4. Поддержка всех основных частот 3G и 4G в России (актуально для MEG7 версии)
+											</li>
+										</ol>
+										<br>
+										<b>Недостатки:</b><br>
+										<p>Даже после выхода Note 5 и в сравнении с ним, недостатков нет. кроме того, что можно нарваться на китайскую версию или восстановленный. По этому будьте внимательней (это в принципе ко всем смартфонам Xiaomi относится, их продается много, а люди часто бьют экраны, топят, давят и т.п., в общим "сырье" для производства восстанавленок есть в достатке).<br>Среди продавцов сейчас высокая конкуренция (не важно где покупаете, в Китае или в своем городе), и некоторые магазины идут на "хитрости", что бы и в прибыли остаться и предложить более низкую цену. В общем на мой взгляд иногда лучше немного переплатить, чем получить кирпич, которой и в СЦ то откажутся принимать на гарантийный ремонт. Что бы избежать "попадалова" следите, что бы смартфон был запаян в заводскую полиэтиленовую пленку.</p>
+										<br>
+										<b>Комментарий:</b><br>
+										<p>
+											Для России самая актуальная версия, это версия с номером модели MEG7, эту версию Xiaomi официально реализует на территории России.
+										</p>
+										<br>
+										<p>Этот номер указывается мелким шрифтом на обратной стороне смартфона - ПРЯМО НА МЕТАЛЛЕ ВНИЗУ. </p>
+										<br>
+										<p>В отличии от других версий в MEG7:</p>
+										<ol>
+											<li>
+												1. Полноценная поддержка Российского 4G LTE благодаря наличию FDD-LTE B20;
+											</li>
+											<li>
+												2. На задней крышке смартфона отсутствуют китайские иероглифы;
+											</li>
+											<li>
+												3. Зарядное устройство не требует переходника, т.е. уже для наших розеток;
+											</li>
+											<li>
+												4. Есть мнение, что в международную и в частности ту, что продают в России официально ставят более дорогие компоненты. Это не звучит странно, т.к. давно известно, что Xiaomi любит ставить в одну модель камеры и дисплеи от разных производителей. По логике "на экспорт" ставят лучшие компоненты, что бы не отпугивать покупателей с новых рынков.
+											</li>
+										</ol>
+										<p>Где смотреть надпись MEG7 приложил на фото:</p>
+									</div>
+									<div class="p-comments__bottom">
+										<div class="p-comments__data">
+											3 июля, Москва
+										</div>
+										<div class="p-comments__rait">
+											Полезно?
+											<a href="#" class="p-comments__like">
+												<i class="fas fa-thumbs-up"></i>
+												39
+											</a>
+											<a href="#" class="p-comments__dislike">
+												<i class="fas fa-thumbs-down"></i>
+												0
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="page__p-commentinfo">
+							<div class="p-commentinfo">
+								<b class="p-commentinfo__top">
+									94% покупателей<br>рекомендуют этот товар
+								</b>
+								<div class="p-commentinfo__raiting">
+									<select class="p-todaydiscount__rating" name="rating" autocomplete="off" data-current-rating="5">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+									<div class="p-commentinfo__ocenka">
+										<b>4.5</b> / 1024 оценки
+									</div>
+								</div>
+								<ul class="p-commentinfo__list">
+									<li class="p-commentinfo__item">
+										<div class="p-commentinfo__rait"></div>
+										Экран
+									</li>
+									<li class="p-commentinfo__item">
+										<div class="p-commentinfo__rait"></div>
+										Объем памяти
+									</li>
+									<li class="p-commentinfo__item">
+										<div class="p-commentinfo__rait"></div>
+										Производительность
+									</li>
+									<li class="p-commentinfo__item">
+										<div class="p-commentinfo__rait"></div>
+										Камера
+									</li>
+									<li class="p-commentinfo__item">
+										<div class="p-commentinfo__rait"></div>
+										Время автономной работы
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page__skidka">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-5">
+						<div class="page__p-discount">
+							<div class="p-discount">
+								<div class="p-discount__text">
+									<h2>
+										Скидка 500 ₽ на первый<br>заказ через приложение
+									</h2>
+									<span>
+										Промокод действует на заказы от 2 500 ₽ в приложении «Беру».<br>Получить скидку можно в течение 2 месяцев после установки приложения
+									</span>
+								</div>
+								<ul class="p-discount__application">
+									<li class="p-discount__item">
+										<a href="#" class="p-discount__link">
+											<img src="img/icons/app-ios.svg" alt="alt" class="p-discount__img">
+										</a>
+									</li>
+									<li class="p-discount__item">
+										<a href="#" class="p-discount__link">
+											<img src="img/icons/app-android.svg" alt="alt" class="p-discount__img">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-7">
+						<div class="page__p-discount">
+							<div class="p-discount">
+								<div class="p-discount__baner">
+									<img src="img/phone.png" alt="alt" class="p-discount__phone">
+									<div class="p-discount__content">
+										<div class="p-discount__wrapper">
+											<h2 class="p-discount__subtitle">
+												BERU_MOb
+											</h2>
+											<p class="p-discount__subdescription">
+												Используйте промокод<br>в приложении
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-8 col-md-9">
+						<div class="footer__f-nav">
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Меню
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Обратная связь
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Мои заказы
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Настройки
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Как купить
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Оплата и доставка
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Возврат
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Помощь
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="f-nav">
+								<b class="f-nav__title">
+									Партнёрам
+								</b>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Как начать сотрудничество
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Помощь
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-4 col-md-3">
+						<div class="footer__f-logo">
+							<a href="/" class="f-logo">
+								<img src="img/logo.svg" alt="alt" class="f-logo__img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-3">
+						<div class="footer__f-sogl">
+							<a href="#" class="f-sogl">
+								Пользовательское соглашение
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-9">
+						<div class="footer__f-copy">
+							<div class="f-copy">
+								© 2018 ООО «Яндекс.Маркет» — совместное предприятие с участием Яндекса и группы компаний Сбербанк
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="libs/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/jquerybarrating/dist/jquery.barrating.min.js"></script>
+	<script>
+
+		/*Слайдер с товарами*/
+		$('.p-card__slider').owlCarousel({
+			loop:false,
+			margin: 12,
+			dots:true,
+			nav:false,
+			animateOut: 'fadeOut',
+			items:1
+		});
+
+		/*Слайдер с товарами*/
+		$('.p-tovslider').owlCarousel({
+			loop:false,
+			margin: 12,
+			dots: false,
+			slideBy: 5,
+			nav:true,
+			responsive:{
+				0:{
+					items:1,
+					margin: 0
+				},
+				768:{
+					items:4
+				},
+				992:{
+					items:6
+				}
+			}
+		});
+
+		$(document).ready(function() {
+			dotcount = 1;
+			$('.p-card__slider .owl-dot').each(function() {
+				$(this).addClass( 'dotnumber' + dotcount);
+				$(this).attr('data-info', dotcount);
+				dotcount=dotcount+1;
+			});
+			slidecount = 1;
+			$('.p-card__slider .owl-item').not('.cloned').each(function() {
+				$(this).addClass('slidenumber' + slidecount);
+				slidecount=slidecount+1;
+			});
+			$('.p-card__slider .owl-dot').each(function() {
+				grab = $(this).data('info');
+				slidegrab = $('.slidenumber'+ grab +' img').attr('src');
+				console.log(slidegrab);
+				$(this).children('span').css("background-image", "url("+slidegrab+")");  
+			});
+		});
+
+		/*Рейтинг звезды*/
+		$(function() {
+			var currentRating = $('.p-todaydiscount__rating').data('current-rating');
+			$('.stars-example-fontawesome-o .current-rating')
+			.find('span')
+			.html(currentRating);
+			$('.stars-example-fontawesome-o .clear-rating').on('click', function(event) {
+				event.preventDefault();
+				$('.p-todaydiscount__rating')
+				.barrating('clear');
+			});
+			$('.p-todaydiscount__rating').barrating({
+				theme: 'fontawesome-stars-o',
+				showSelectedRating: false,
+				initialRating: currentRating,
+				onSelect: function(value, text) {
+					if (!value) {
+						$('.p-todaydiscount__rating')
+						.barrating('clear');
+					} else {
+						$('.stars-example-fontawesome-o .current-rating')
+						.addClass('hidden');
+
+						$('.stars-example-fontawesome-o .your-rating')
+						.removeClass('hidden')
+						.find('span')
+						.html(value);
+					}
+				},
+				onClear: function(value, text) {
+					$('.stars-example-fontawesome-o')
+					.find('.current-rating')
+					.removeClass('hidden')
+					.end()
+					.find('.your-rating')
+					.addClass('hidden');
+				}
+			});
+		});
+
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- End_Scripts -->
+</body>
+</html>

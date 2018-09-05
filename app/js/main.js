@@ -162,4 +162,37 @@ $(function() {
 		}
 	});
 
+	/*? - карточка*/
+	$('.p-characteristics__info').on('click', function() {
+		$(this).toggleClass('active');
+		$(this).parent().children('.p-characteristics__popup').toggle();
+		$(document).click(function(event) {
+			if ($(event.target).closest('.p-characteristics__popup').length) return;
+				$('.p-characteristics__popup').hide();
+				$('.p-characteristics__info').removeClass('active');
+				event.stopPropagation();
+			});
+		return false;
+	});
+
+	/*скролл блока*/
+	var h_hght = 125;
+	var h_mrg = 0;
+	var elem = $('.page__fixed');
+	var top = $(this).scrollTop();
+
+	if(top > h_hght){
+		elem.css('top', h_mrg);
+	}           
+
+	$(window).scroll(function(){
+		top = $(this).scrollTop();
+
+		if (top+h_mrg < h_hght) {
+			elem.css('top', (h_hght-top));
+		} else {
+			elem.css('top', h_mrg);
+		}
+	});
+
 });

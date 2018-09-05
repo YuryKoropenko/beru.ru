@@ -2351,3 +2351,554 @@
 			text-decoration: none
 			color: #6a3df7
 			opacity: .7
+
+.p-characteristics
+	&__title
+		font-size: 42px
+		display: block
+		color: #222
+		line-height: 44px
+		font-family: "YSTMedium"
+	&__subtitle
+		font-size: 28px
+		padding-top: 26px
+		line-height: 36px
+		font-family: "YSTMedium"
+		display: block
+	&__subtitle
+	&__list
+		max-width: 820px
+		width: 100%
+		padding-top: 16px
+	&__item
+		margin-top: 16px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+		&:first-child
+			margin-top: 0
+	&__left
+		font-size: 16px
+		line-height: 24px
+		color: #222
+		width: 50%
+		float: left
+		position: relative
+		span
+			display: inline-block
+			position: relative
+			padding-right: 10px
+			background-color: #fff
+		&::after
+			content: ''
+			background: linear-gradient(90deg,#dcdcdc 100%,transparent 0) repeat-x bottom
+			display: block
+			left: 0
+			right: 10px
+			width: auto
+			bottom: 6px
+			height: 1px
+			z-index: -1
+			position: absolute
+	&__pm
+		padding-right: 34px !important
+	&__info
+		display: block
+		width: 16px
+		height: 16px
+		border-radius: 50%
+		border: 1px solid hsla(0,0%,60%,.3)
+		color: #999
+		position: absolute
+		right: 10px
+		top: 50%
+		margin-top: -8px
+		font-size: .62em
+		line-height: 14px
+		text-align: center
+		&:hover
+			text-decoration: none
+			color: #999
+	&__info.active
+		background-color: #6a3df7
+		border-color: #6a3df7
+		color: #fff
+	&__right
+		width: 50%
+		float: left
+		font-size: 16px
+		line-height: 24px
+		color: #222
+	&__popup
+		padding: 17px 18px
+		border-radius: 8px
+		background-color: rgba(0,0,0,.9)
+		z-index: 20
+		color: #fff
+		position: absolute
+		bottom: 100%
+		left: 100%
+		margin-left: -45px
+		width: 520px
+		margin-bottom: 10px
+		display: none
+		&::after
+			content: ''
+			position: absolute
+			left: 18px
+			bottom: -13px
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 9.5px 9px 0 9.5px
+			border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent
+		&:hover
+			background-color: rgba(0, 0, 0, 0.7)
+			&::after
+				border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent
+	&__popupwp
+		font-size: 14px
+		line-height: 22px
+		color: #fff
+	&__all
+		margin-top: 16px
+		font-size: 18px
+		line-height: 24px
+		font-family: "YSTMedium"
+		color: #6a3df7
+		display: inline-block
+		&:hover
+			text-decoration: none
+			color: #6a3df7
+			opacity: .7
+
+.p-comment
+	padding-right: 33.333333%
+	display: block
+	position: relative
+	&__title
+		font-size: 32px
+		line-height: 30px
+		font-family: "YSTBold"
+		display: block
+	&__right
+		width: 33.333333%
+		display: block
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		text-align: right
+	&__btn
+		max-width: 285px
+		display: block
+		width: 100%
+		height: 49px
+		line-height: 49px
+		font-family: "YSTBold"
+		font-size: 14px
+		text-align: center
+		display: inline-block
+		background-color: #6b25fc
+		border-radius: 4px
+		text-transform: uppercase
+		color: #fff
+		&:hover
+			text-decoration: none
+			color: #fff
+			background-color: #422498
+	&__sort
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		max-width: 800px
+		width: 100%
+		padding-top: 35px
+		margin-bottom: -17px
+	&__list
+		font-size: 0
+		padding-top: 3px
+	&__check
+		.p-filter__item
+			padding: 0
+	&__item
+		display: inline-block
+		font-size: 12px
+		color: #404040
+		margin-left: 15px
+		&:first-child
+			margin-left: 0
+	&__link
+		color: #3757c5
+		font-size: 12px
+		line-height: 16px
+		&:hover
+			text-decoration: none
+			color: #3757c5
+			opacity: .7
+
+.p-comments
+	&__top
+		position: relative
+		padding: 10px 0 10px 46px
+		display: inline-block
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__img
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		display: block
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -18px
+	&__name
+		color: #222
+		font-size: 16px
+		line-height: 18px
+		float: left
+		line-height: 42px
+	&__line
+		padding-top: 16px
+		padding-bottom: 16px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__content
+		font-size: 14px
+		line-height: 22px
+		p
+			display: block
+		strong, b
+			font-family: "YSTBold"
+		li
+		ol
+
+		ul
+			li
+	&__bottom
+		padding-top: 12px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__data
+		color: #999
+		font-size: 14px
+		line-height: 22px
+		width: 50%
+		float: left
+	&__rait
+		width: 50%
+		float: right
+		font-size: 14px
+		line-height: 22px
+		text-align: right
+	&__like
+		padding-left: 20px
+		position: relative
+		display: inline-block
+		font-size: 14px
+		color: #16c67a
+		margin-left: 13px
+		.fas
+			position: absolute
+			left: 0
+			top: 3px
+			color: #999
+	&__dislike
+		padding-left: 20px
+		position: relative
+		display: inline-block
+		font-size: 14px
+		color: #ff3f68
+		margin-left: 13px
+		.fas
+			position: absolute
+			left: 0
+			top: 3px
+			color: #999
+	.br-wrapper
+		float: left
+		display: block
+		height: 16px
+	&__text
+		color: #999
+		float: left
+		display: block
+		font-size: 14px
+		margin-left: 15px
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 16px
+		height: 16px
+
+.p-commentssoc
+	font-size: 0
+	float: left
+	margin-left: 15px
+	margin-top: 12px
+	&__item
+		display: inline-block
+		margin-left: 5px
+	&__link
+		width: 18px
+		height: 18px
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		display: block
+
+.p-commentinfo
+	display: inline-block
+	text-align: left
+	width: 100%
+	max-width: 285px
+	&__top
+		display: block
+		font-size: 16px
+		line-height: 22px
+		font-family: "YSTBold"
+		padding-bottom: 22px
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 18px
+		height: 18px
+	.br-theme-fontawesome-stars-o .br-widget
+		height: 18px
+	&__ocenka
+		margin-left: 12px
+	.br-wrapper
+		display: block
+		float: left
+	.p-commentinfo__ocenka
+		display: inline-block
+		font-size: 14px
+		line-height: 20px
+		color: #999
+		b
+			font-family: "YSTMedium"
+			color: #222
+			font-size: 20px
+	&__list
+		padding-top: 28px
+		display: block
+	&__item
+		padding-left: 96px
+		position: relative
+		font-size: 14px
+		line-height: 20px
+		color: #050505
+		display: block
+		margin-bottom: 5px
+	&__rait
+		position: absolute
+		left: 0
+		width: 85px
+		height: 4px
+		background-color: #f2f2f2
+		border-radius: 3px
+		display: block
+		left: 0
+		top: 50%
+		margin-top: -2px
+
+.p-copy
+	font-size: 12px
+	line-height: 24px
+	color: #222
+	white-space: nowrap
+
+.p-carentitem
+	&-left
+		min-height: 132px
+		position: relative
+		padding-left: 126px
+		padding-top: 28px
+	&__img
+		width: 100px
+		height: 100px
+		display: block
+		left: 0
+		top: 50%
+		position: absolute
+		margin-top: -50px
+		background-repeat: no-repeat
+		background-size: contain
+		background-position: center center
+	&__title
+		font-size: 16px
+		line-height: 20px
+		color: #222
+		position: relative
+		padding-right: 104px
+		display: inline-block
+	.br-wrapper
+		position: absolute
+		display: block
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	.br-widget
+		height: 16px
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 16px
+		height: 16px
+	&__bottom
+		display: block
+		width: 100%
+		margin-top: 18px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__price
+		font-size: 16px
+		float: left
+		color: #222
+		font-family: "YSTBold"
+		line-height: 32px
+		&::after
+			color: #222
+			font-size: 12px
+			content: '₽'
+	&__btn
+		margin-left: 26px
+		display: block
+		float: left
+		height: 32px
+		border: 1px solid #6a3df7
+		border-radius: 4px
+		line-height: 30px
+		text-align: center
+		max-width: 98px
+		width: 100%
+		color: #6a3df7
+		font-size: 14px
+		&:hover
+			color: #3e2d8f
+			border-color: #3e2d8f
+	&-right
+		margin-left: -30px
+	&__list
+		width: 100%
+		display: block
+		text-align: right
+		font-size: 0
+	&__item
+		display: inline-block
+		margin-left: 42px
+		&:first-child
+			margin-left: 0
+	&__link
+		color: #999
+		font-size: 14px
+		text-transform: uppercase
+		font-family: "YSTBold"
+		&:hover
+			text-decoration: none
+			color: #999
+	&__item.active
+		.p-carentitem__link
+			color: #6a3df7
+
+.p-polz
+	float: left
+	margin-left: 15px
+	margin-top: 0
+	&__ver
+		display: block
+		padding-left: 24px
+		color: #29ad2e
+		line-height: 22px
+		font-size: 14px
+		font-family: "YSTMedium"
+		position: relative
+		svg
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+	&__inf
+		display: block
+		font-size: 14px
+		line-height: 22px
+		color: #222
+
+.p-changed
+	padding: 20px
+	background-color: #f7f7f7
+	border-radius: 2px
+	border-left: 4px solid #fd8949
+	&__wp
+	&__title
+		font-size: 16px
+		line-height: 22px
+		color: #222
+		font-family: "YSTBold"
+		display: block
+	&__link
+		color: #6a3df7
+		display: inline-block
+		font-size: 14px
+		line-height: 20px
+		&:hover
+			text-decoration: none
+			color: #6a3df7
+			opacity: .7
+
+.p-basket
+	&__item
+		min-height: 152px
+		padding: 26px 0
+	&__img
+		width: 100px
+		height: 100px
+		display: block
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+	&__title
+		display: inline-block
+		color: #222
+		font-size: 14px
+		line-height: 18px
+		&:hover
+			color: #999
+			text-decoration: none
+	&__status
+		display: block
+		width: 100%
+		color: #16c67a
+		margin-top: 4px
+		line-height: 18px
+		font-size: 13px
+		font-family: "YSTBold"
