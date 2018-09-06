@@ -2876,9 +2876,29 @@
 			opacity: .7
 
 .p-basket
+	&-right
+		margin-top: 13px
+		padding: 20px 20px 84px 20px
+		border-radius: 4px
+		border: 1px solid #ececec
+		width: 338px
+		display: inline-block
+		text-align: left
+		position: relative
 	&__item
 		min-height: 152px
 		padding: 26px 0
+		display: block
+		border-bottom: 1px solid #ececec
+		&:first-child
+			border-top: 1px solid #ececec
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
 	&__img
 		width: 100px
 		height: 100px
@@ -2886,6 +2906,11 @@
 		background-repeat: no-repeat
 		background-position: center center
 		background-size: contain
+		float: left
+	&__text
+		padding-left: 16px
+		float: left
+		width: 45%
 	&__title
 		display: inline-block
 		color: #222
@@ -2902,3 +2927,304 @@
 		line-height: 18px
 		font-size: 13px
 		font-family: "YSTBold"
+	&__count
+		position: relative
+		padding-left: 37px
+		padding-right: 37px
+		width: 106px
+		display: block
+		float: left
+	&__minus
+		width: 37px
+		height: 27px
+		border-radius: 2px 0 0 2px
+		background-color: hsla(0,0%,93%,.6)
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		&::after
+			content: '-'
+			display: block
+			position: absolute
+			left: 0
+			z-index: 1
+			line-height: 27px
+			text-align: center
+			right: 0
+			top: 0
+			bottom: 0
+			font-size: 20px
+			color: #222
+	&__plus
+		width: 37px
+		height: 27px
+		border-radius: 0 2px 2px 0
+		background-color: hsla(0,0%,93%,.6)
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		&::after
+			content: '+'
+			display: block
+			position: absolute
+			left: 0
+			z-index: 1
+			line-height: 27px
+			text-align: center
+			right: 0
+			top: 0
+			bottom: 0
+			font-size: 20px
+			color: #222
+	&__input
+		display: block
+		height: 27px
+		width: 100%
+		border: 1px solid hsla(0,0%,93%,.6)
+		text-align: center
+		font-weight: normal
+		font-size: 14px
+	&__price
+		font-size: 16px
+		color: #222
+		font-family: "YSTBold"
+		line-height: 27px
+		float: left
+		width: 25%
+		text-align: center
+		&::after
+			content: '₽'
+			font-size: 12px
+			color: #222
+	&__clear
+		width: 24px
+		display: block
+		float: left
+		svg
+			fill: #dcdcdc
+			width: 100%
+			height: auto
+		&:hover
+			svg
+				fill: #999999
+	
+	&__top
+		display: block
+		padding-bottom: 16px
+		margin-bottom: 16px
+		border-bottom: 1px solid #ececec
+	&__grt
+		font-size: 14px
+		line-height: 20px
+		display: block
+		padding-left: 48px
+		position: relative
+		span
+			color: #16c67a
+		&::before
+			content: ''
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			border: 2px solid #16c67a
+			display: block
+			position: absolute
+			left: 0
+			top: 050%
+			margin-top: -20px
+		.fas
+			font-size: 16px
+			position: absolute
+			color: #222
+			display: block
+			left: 10px
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+	&__info
+	&__infoitem
+		padding-left: 32px
+		font-size: 16px
+		line-height: 22px
+		margin-top: 8px
+		position: relative
+		&:first-child
+			margin-top: 0
+		span
+			color: #16c67a
+			font-family: "YSTMedium"
+		.fas
+			display: block
+			font-size: 16px
+			color: #222
+			position: absolute
+			left: 0
+			top: 3px
+		.fab
+			display: block
+			font-size: 16px
+			color: #222
+			position: absolute
+			left: 0
+			top: 3px
+	&__subtitle
+		font-family: "YSTMedium"
+		font-size: 16px
+		line-height: 22px
+		display: block
+	&__promo
+		width: 100%
+		position: relative
+		margin-top: 16px
+		margin-bottom: 16px
+		label
+			position: absolute
+			left: 0
+			bottom: 0
+			display: block
+			transition: .1s ease-out;
+			line-height: 36px
+			font-size: 16px
+			color: #999
+			cursor: text
+		input[type="text"]
+			width: 100%
+			display: block
+			border: none
+			height: 36px
+			font-size: 16px
+			padding-right: 36px
+		button
+			position: absolute
+			right: 0
+			z-index: 10
+			bottom: 6px
+			background-color: #6a3df7
+			line-height: 24px
+			text-align: center
+			border: none
+			width: 24px
+			height: 24px
+			border-radius: 50%
+			cursor: pointer
+			.fas
+				color: #fff
+				font-size: 12px
+				position: absolute
+				left: 0
+				right: 0
+				text-align: center
+				top: 6px
+			&:hover
+				background-color: #3e2d8f
+		&::after
+			content: ''
+			bottom: 0
+			left: 0
+			width: 100%
+			display: block
+			right: 0
+			height: 1px
+			background-color: #ececec
+	&__promo.active
+		margin-top: 15px
+		&::after
+			background-color: #6a3df7
+			height: 2px
+		label
+			font-size: 11px
+			line-height: 11px
+			top: -8px
+			bottom: auto
+			color: #6a3df7
+	&__per
+	&__peritem
+		display: block
+		margin-bottom: 4px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__perl
+		width: 50%
+		float: left
+		font-size: 16px
+		line-height: 22px
+		color: #222
+		strong
+			font-family: "YSTBold"
+	&__perr
+		width: 50%
+		float: right
+		text-align: right
+		&-price
+			font-size: 16px
+			line-height: 22px
+			color: #222
+			&::after
+				content: '₽'
+				font-size: 12px
+		&-dost
+			span
+				color: #16c67a
+		&-sum
+			font-family: "YSTBold"
+			font-size: 22px
+			line-height: 28px
+			color: #222
+			&::after
+				content: '₽'
+				font-size: 12px
+	&__oform
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		height: 64px
+		line-height: 64px
+		text-align: center
+		display: block
+		background-color: #6a3df7
+		font-size: 18px
+		font-family: "YSTMedium"
+		border-radius: 0 0 4px 4px
+		color: #fff
+		&:hover
+			color: #fff
+			text-decoration: none
+			background-color: #3e2d8f
+
+.p-basketslider
+	.p-sliderdiscounts__title
+		height: 54px
+		overflow: hidden
+		font-size: 14px
+		line-height: 18px
+	.disabled
+		display: -webkit-flex !important
+		display: -moz-flex !important
+		display: -ms-flex !important
+		display: -o-flex !important
+		display: flex !important
+		span
+			display: block
+			opacity: .5
+	.owl-prev,
+	.owl-next
+		width: 46px
+		height: 46px
+		margin-top: -23px
+		background-color: transparent !important
+		border: 1px solid rgba(237, 237, 237, 0.9) !important
+		&:hover
+			background-color: transparent !important
+	.owl-prev
+		left: -46px
+	.owl-next
+		right: -46px

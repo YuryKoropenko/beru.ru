@@ -195,4 +195,16 @@ $(function() {
 		}
 	});
 
+	/*анимация купона*/
+	$('.p-basket__promo label').on('click', function() {
+		$(this).parent().addClass('active');
+		$(this).parent().children('input[type="text"]').focus();
+		$(document).click(function(event) {
+			if ($(event.target).closest('.p-basket__promo').length) return;
+				$('.p-basket__promo').removeClass('active');
+				event.stopPropagation();
+			});
+		return false;
+	});
+
 });
