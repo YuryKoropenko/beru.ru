@@ -1453,6 +1453,12 @@
 	font-size: 32px
 	color: #222
 	font-family: "YSTMedium"
+	&__info
+		font-size: 12px
+		color: #999
+		margin-bottom: 10px
+		display: block
+		padding-top: 26px
 
 .p-filter
 	&__top
@@ -3044,6 +3050,23 @@
 			transform: translateY(-50%)
 			-webkit-transform: translateY(-50%)
 	&__info
+		&-opl
+			.p-basket__perl
+				font-size: 14px
+				color: #999
+			.p-basket__perr-price
+				font-size: 14px
+				font-family: "YSTBold"
+				&::after
+					font-size: 14px
+			.p-basket__perr-dost span
+				font-family: "YSTBold"
+				font-size: 14px
+			.p-basket__perr-sum
+				font-size: 18px
+				line-height: 22px
+			.p-basket__perl strong
+				color: #222
 	&__infoitem
 		padding-left: 32px
 		font-size: 16px
@@ -3199,6 +3222,99 @@
 			color: #fff
 			text-decoration: none
 			background-color: #3e2d8f
+		&-zak
+			text-transform: uppercase
+			font-size: 14px
+			font-family: "YSTBold"
+	&__pol
+		font-size: 12px
+		margin-top: 12px
+		color: #999
+		display: inline-block
+		text-align: center
+		padding: 0 10px
+		max-width: 338px
+		width: 100%
+		a
+			color: #6a3df7
+			&:hover
+				text-decoration: none
+				color: #6a3df7
+				opacity: .7
+	&__lin
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__linl
+		font-size: 20px
+		font-family: "YSTBold"
+		width: 50%
+		float: left
+		line-height: 25px
+	&__linr
+		width: 50%
+		float: right
+		text-align: right
+		line-height: 25px
+		a
+			font-size: 12px
+			text-transform: uppercase
+			color: #6b25fc
+			font-family: "YSTBold"
+			&:hover
+				color: #6b25fc
+				text-decoration: none
+	&__tovar
+		display: block
+		padding-top: 20px
+	&__tovaritem
+		display: block
+		width: 100%
+		padding-left: 66px
+		position: relative
+	&__tovarimg
+		width: 50px
+		height: 50px
+		display: block
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -25px
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+	&__tovartitle
+		font-size: 12px
+		color: #222
+	&__tovarprice
+		font-size: 13px
+		color: #222
+		font-family: "YSTBold"
+		display: block
+		width: 100%
+		padding-top: 6px
+		&::after
+			content: '₽'
+	&__tovarcount
+		color: #999
+		font-size: 12px
+		display: block
+		padding-top: 6px
+	&__partn
+		margin: 20px 0 0
+		display: block
+		color: #999
+		font-size: 12px
+		a
+			color: #6b25fc
+			&:hover
+				text-decoration: none
+				color: #6b25fc
+				opacity: .7
 
 .p-basketslider
 	.p-sliderdiscounts__title
@@ -3228,3 +3344,488 @@
 		left: -46px
 	.owl-next
 		right: -46px
+
+.p-noautor
+	min-height: 150px
+	position: relative
+	padding: 24px 24px 24px 150px
+	border-radius: 4px
+	box-shadow: 0 9px 46px 0 rgba(0,0,0,.06)
+	background-color: #fff
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	&__img
+		width: 100px
+		height: 100px
+		border-radius: 50%
+		position: absolute
+		left: 24px
+		top: 24px
+		background-image: url(../img/icons/noprof.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+	&__text
+		font-size: 16px
+		color: #222
+		display: block
+		width: 100%
+		line-height: 20px
+		max-width: 590px
+	&__link
+		margin-top: 16px
+		display: inline-block
+		font-size: 14px
+		text-transform: uppercase
+		line-height: 20px
+		color: #6b25fc
+		font-family: "YSTBold"
+		&:hover
+			text-decoration: none
+			color: #6b25fc
+			opacity: .7
+
+.p-checkout
+	margin-top: 42px
+	&__title
+		display: block
+		margin-bottom: 16px
+		font-size: 20px
+		font-family: "YSTBold"
+		color: #222
+		width: 100%
+	&__inputwp
+		position: relative
+		max-width: 484px
+		width: 100%
+		margin-top: 30px
+		&::after
+			content: ''
+			bottom: 0
+			left: 0
+			width: 100%
+			display: block
+			right: 0
+			height: 1px
+			background-color: #ececec
+			position: absolute
+	&__input
+		width: 100%
+		display: block
+		border: none
+		height: 36px
+		font-size: 14px
+		padding-right: 36px
+	&__inputwp.focus
+		&::after
+			background-color: #6a3df7
+			height: 2px
+		.p-checkout__inputlable
+			color: #6a3df7
+	&__del
+		width: 18px
+		height: 18px
+		border-radius: 50%
+		position: absolute
+		z-index: 1
+		right: 0
+		top: 50%
+		margin-top: -9px
+		background-color: #222
+		display: none
+		opacity: .4
+		.fas
+			display: block
+			font-size: 12px
+			color: #fff
+			position: absolute
+			left: 5px
+			top: 2.8px
+		&:hover
+			text-decoration: none
+			opacity: 1
+	&__inputlable
+		position: absolute
+		left: 0
+		top: -8px
+		z-index: 1
+		font-size: 11px
+		color: #999
+	&__dost
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__dostitem
+		padding: 20px
+		border-radius: 4px
+		border: 2px solid #dcdcdc
+		margin-left: 16px
+		width: 228px
+		float: left
+		height: 97px
+		cursor: pointer
+		&:first-child
+			margin-left: 0
+	&__dosttitle
+		font-size: 16px
+		letter-spacing: .3px
+		font-family: "YSTMedium"
+		color: #000
+		display: block
+	&__dostdescription
+		font-size: 12px
+		margin-top: 6px
+		display: block
+		line-height: 1.33
+		color: #999
+	&__dostitem.active
+		border-color: #ffa000
+		background-color: rgba(252,185,30,.1)
+	&__warn
+		margin-top: 12px
+		display: block
+		color: #999
+		font-size: 12px
+	.p-basket__promo
+		max-width: 484px
+		&-wid
+			max-width: 234px
+	.p-basket__promo
+		label
+			font-size: 14px
+		input
+			font-size: 14px
+	.p-basket__promo.active
+		label
+			font-size: 12px
+			top: -7px
+	.p-basket__promo-skidka
+		width: 100%
+		max-width: 484px
+		margin-top: 30px
+		button
+			width: auto
+			line-height: 24px
+			background-color: transparent
+			border-radius: none
+			text-transform: uppercase
+			font-size: 14px
+			color: #6a3df7
+			font-family: "YSTBold"
+	&__copy
+		margin-top: 12px
+		color: #999
+		font-size: 12px
+		display: block
+		width: 100%
+		max-width: 386px
+
+.ui-selectmenu-button
+	max-width: 335px
+	width: 100% !important
+	display: block
+	margin-right: 0 !important
+	padding: 0 !important
+	line-height: 30px !important
+	padding-left: 15px !important
+	padding-right: 29px !important
+	background-color: transparent !important
+	margin-top: 12px !important
+	position: relative !important
+	&::after
+		content: ''
+		display: block
+		width: 11px
+		height: 11px
+		display: block
+		background-image: url(../img/icons/down-arrow.svg)
+		position: absolute
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+		top: 50%
+		right: 12px
+		margin-top: -5.5px
+.ui-selectmenu-button.ui-selectmenu-button-open
+	&::after
+		transform: rotate(180deg)
+		-webkit-transform: rotate(180deg)
+.ui-button .ui-icon
+	display: none !important
+
+.f-help
+	font-size: 0
+	&__item
+		display: inline-block
+		margin-right: 25px
+		&:last-child
+			margin-right: 0
+	&__link
+		display: block
+		font-family: "YSTBold"
+		color: #787878
+		font-size: 13px
+		line-height: 18px
+		&:hover
+			text-decoration: none
+			color: #787878
+			opacity: .7
+
+.p-checkout__title
+	span
+		color: #f73d34
+		font-size: 12px
+		margin-top: 6px
+		display: block
+
+.popup
+	width: 100%
+	max-width: 864px
+	margin-top: 20px !important
+	&__wrapper
+		background-color: #fff
+		padding: 16px 42px 26px
+		width: 100%
+		border-radius: 8px
+		margin-top: 16px
+	.p-basket__img
+		outline: none !important
+	.p-characteristics__title
+		font-size: 32px
+	&__vkorz
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 26px
+	&__vkorztov
+		font-size: 13px
+		color: #999
+		a
+			color: #6a3df7
+			&:hover
+				text-decoration: none
+				color: #6a3df7
+				opacity: .7
+	&__button
+		width: 230px
+		display: block
+		height: 52px
+		line-height: 48px
+		text-align: center
+		border: 2px solid #6a3df7
+		border-radius: 4px
+		color: #6a3df7
+		background-color: transparent
+		font-family: "YSTMedium"
+		font-size: 18px
+		&:hover
+			color: #3e2d8f
+			border-color: #3e2d8f
+			text-decoration: none
+		&-zal
+			background-color: #6a3df7
+			color: #fff
+			&:hover
+				color: #fff
+				border-color: #3e2d8f
+				background-color: #3e2d8f
+	&__congratwp
+		text-align: center
+		display: block
+		width: 100%
+		margin-top: 30px
+	&__congrat
+		position: relative
+		padding-left: 48px
+		display: inline-block
+		font-size: 20px
+		line-height: 22px
+		font-family: "YSTBold"
+		&::before
+			content: ''
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			border: 2px solid #16c67a
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -20px
+		.fas
+			font-size: 16px
+			position: absolute
+			color: #222
+			display: block
+			left: 10px
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+
+.p-popuptovslider
+	margin-top: 20px
+	.p-sliderdiscounts__price
+		text-align: left
+	.br-theme-fontawesome-stars-o .br-widget a
+		width: 12px
+		height: 12px
+	.owl-prev
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		left: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.owl-next
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: hsla(0,0%,93%,.6) !important
+		position: absolute
+		right: -20px
+		top: 50%
+		margin-top: -20px
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: hsla(0,0%,93%,.9) !important
+		span
+			font-size: 0
+			background-image: url(../img/icons/left-arrow.svg)
+			transform: rotate(180deg)
+			-webkit-transform: rotate(180deg)
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	.disabled
+		display: none !important
+
+.h-come
+	&__popup
+		position: absolute
+		right: 0
+		width: 290px
+		top: 100%
+		z-index: 20
+		background-color: #fff
+		box-shadow: 0 9px 46px 0 rgba(0, 0, 0, 0.06)
+		padding: 20px 20px 10px 20px
+		border-radius: 8px
+		display: none
+	&__profil
+		padding-left: 52px
+		position: relative
+		padding-bottom: 10px
+	&__img
+		width: 40px
+		height: 40px
+		display: block
+		border-radius: 50%
+		position: absolute
+		left: 0
+		top: 0
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+	&__name
+		font-size: 14px
+		color: #222
+		display: block
+		line-height: 18px
+	&__email
+		font-size: 13px
+		color: #999
+		line-height: 18px
+	&__prev
+		font-size: 13px
+		color: #222
+		display: inline-block
+		position: relative
+		line-height: 18px
+		span
+			padding-left: 6px
+			padding-right: 6px
+			font-size: 10px
+			font-family: "YSTMedium"
+			line-height: 18px
+			height: 18px
+			text-transform: uppercase
+			display: inline-block
+			position: absolute
+			left: 100%
+			margin-left: 8px
+			top: 50%
+			margin-top: -9px
+			color: #fff
+			background-color: #6a3df7
+			border-radius: 8px
+	&__menu
+		border-bottom: 1px solid #ececec
+		padding: 5px 0
+		&-last
+			border-bottom: none
+	&__menuitem
+		display: block
+		width: 100%
+		padding-bottom: 10px
+		&:first-child
+			padding-top: 8px
+	&__menulink
+		display: block
+		padding-left: 30px
+		position: relative
+		font-size: 14px
+		color: #222
+		.fas, .far
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			color: #6b25fc
+		&:hover
+			text-decoration: none
+			color: #222
+			opacity: .7
+

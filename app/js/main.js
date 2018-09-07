@@ -207,4 +207,27 @@ $(function() {
 		return false;
 	});
 
+	/*фокус*/
+	$('.p-checkout__input').focus(function() {
+		$(this).parent().addClass('focus');
+		$(this).parent().children('.p-checkout__del').fadeIn();
+		return false;
+	});
+	$('.p-checkout__input').focusout(function() {
+		$(this).parent().removeClass('focus');
+		$(this).parent().children('.p-checkout__del').fadeOut();
+		return false;
+	});
+
+	/*Мой профиль*/
+	$('.h-come-btn').on('click', function() {
+		$(this).parent().children('.h-come__popup').fadeToggle();
+		$(document).click(function(event) {
+			if ($(event.target).closest('.h-come__popup').length) return;
+				$('.h-come__popup').fadeOut();
+				event.stopPropagation();
+			});
+		return false;
+	});
+
 });

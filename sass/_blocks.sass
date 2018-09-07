@@ -28,6 +28,16 @@ body
 		border-width: 40px 50vw
 		border-style: solid
 		border-color: #422598 transparent transparent #422598
+	&-new
+		background-color: #fafaf9
+		&::after
+			display: none !important
+		.h-come
+			color: #6a3df7
+			&::before
+				background-image: url(../img/icons/profill-blue.svg)
+			&:hover
+				color: #6a3df7
 	&__top
 		border-bottom: 1px solid rgba(240,240,240,.1)
 	&__bottom
@@ -53,7 +63,8 @@ body
 		display: flex
 		justify-content: flex-end
 	&__h-catalog
-
+	&__h-come
+		position: relative
 	&__h-search
 		width: 477px
 	&__h-basket
@@ -68,8 +79,18 @@ body
 		background-color: #fff
 		z-index: 20
 		display: none
+	&__h-slusba
+		color: #222
+		font-size: 14px
+		display: block
+		text-align: center
+		b
+			font-family: "YSTBold"
 
 .page
+	&-new
+		&::before
+			display: none !important
 	&__index
 	&-white
 		&-scroll
@@ -206,11 +227,17 @@ body
 	&__p-changed
 		padding-top: 13px
 		padding-bottom: 26px
+	&__p-noautor
+		padding-top: 26px
 
 
 .footer
 	background-color: #422498
 	padding: 18px 0 10px
+	&-new
+		background-color: #fafaf9
+		padding: 30px 0
+		margin-top: 100px
 	&__top
 		padding: 26px 0
 	&__f-nav
@@ -244,3 +271,12 @@ body
 	&__f-copy
 		text-align: right
 		padding: 22px 0
+	&__f-podd
+		p
+			font-size: 13px
+			line-height: 18px
+			color: #787878
+			display: block
+			margin-bottom: 10px
+		b
+			font-family: "YSTBold"
